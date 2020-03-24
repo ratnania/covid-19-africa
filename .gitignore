@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# datasets
+.checkpoints*
+datasets/datapackage.json
+datasets/time_series_19-covid-Confirmed.csv
+datasets/time_series_19-covid-Deaths.csv
+datasets/time_series_19-covid-Recovered.csv
