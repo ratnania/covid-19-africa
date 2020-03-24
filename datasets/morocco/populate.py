@@ -1,4 +1,5 @@
 # coding: utf-8
+# This file was used to generate the first patients.csv version
 
 import os
 import pandas as pd
@@ -10,6 +11,7 @@ def mkdir_p(folder):
     os.makedirs(folder, exist_ok=True)
 
 #==============================================================================
+
 columns = ['Region', 'Date', 'Local', 'Origin', 'Status', 'Age', 'Gender']
 
 df = pd.DataFrame(columns=columns)
