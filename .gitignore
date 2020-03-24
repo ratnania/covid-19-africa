@@ -130,7 +130,7 @@ dmypy.json
 
 # datasets
 .checkpoints*
-datasets/datapackage.json
-datasets/time_series_19-covid-Confirmed.csv
-datasets/time_series_19-covid-Deaths.csv
-datasets/time_series_19-covid-Recovered.csv
+datapackage.json
+time_series_19-covid-Confirmed.csv
+time_series_19-covid-Deaths.csv
+time_series_19-covid-Recovered.csv
