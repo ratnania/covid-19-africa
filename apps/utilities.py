@@ -130,10 +130,7 @@ def load_country_map(country):
             d_contours[k] = y
     # ...
 
-    namespace = {}
-    namespace['contours'] = d_contours
-
-    return namespace
+    return d_contours
 
 # =================================================================
 def plotly_country_map(province, contour, highlighted=False):
@@ -151,13 +148,56 @@ def plotly_country_map(province, contour, highlighted=False):
         x=x,
         y=y,
         mode = 'lines',
-#        name=province,
+        name=province,
         line=line_marker,
         fill='toself',
         fillcolor = fillcolor,
     )
 
     return [trace_crv]
+
+# =================================================================
+def plotly_country_n_patients(d_barycenters, df):
+    # ...
+    n_patients = []
+    x = []
+    y = []
+    for province, barycenter in d_barycenters.items():
+        x.append(barycenter[0])
+        y.append(barycenter[1])
+
+        _df = df[df['province'] == province]
+        n = len(_df.index)
+        n_patients.append(n)
+    # ...
+
+    # TODO remove position + trace id from hover
+    trace = go.Scatter(
+        x=x,
+        y=y,
+        mode = 'markers',
+        marker=dict(color='#FF6960'),
+        marker_size=n_patients,
+        hovertext=[str(i) for i in n_patients],
+    )
+
+    return [trace]
+
+# =================================================================
+def load_country_patients(country):
+    # TODO take patients.csv
+    fname = '../datasets/{country}/patients-test.csv'.format(country=country.lower())
+    df = read_csv(fname)
+    return df
+
+# =================================================================
+def compute_barycenters(d_contours):
+    d_barycenters = {}
+    for province, contour in d_contours.items():
+        d_barycenters[province] = (contour[:,0].mean(), contour[:,1].mean())
+
+    return d_barycenters
+
 
 ########################################################################
 if __name__ == '__main__':

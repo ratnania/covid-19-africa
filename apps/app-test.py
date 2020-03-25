@@ -10,7 +10,10 @@ import numpy as np
 from pandas import read_csv
 
 from utilities import load_country_map
+from utilities import load_country_patients
+from utilities import compute_barycenters
 from utilities import plotly_country_map
+from utilities import plotly_country_n_patients
 
 # ...
 COUNTRY = 'Morocco'
@@ -20,8 +23,14 @@ COUNTRY = 'Morocco'
 app = dash.Dash(__name__)
 # ...
 
-namespace = load_country_map(COUNTRY)
+# ...
+namespace = {}
+namespace['contours'] = load_country_map(COUNTRY)
+namespace['patients'] = load_country_patients(COUNTRY)
 provinces = list(namespace['contours'].keys())
+
+d_barycenters = compute_barycenters(namespace['contours'])
+# ...
 
 # =================================================================
 app.layout = html.Div([
@@ -33,9 +42,6 @@ app.layout = html.Div([
         ]),
         #
         html.Div(className='four columns', children=[
-            html.Button('load', id='button_load',
-                        n_clicks_timestamp=0),
-            dcc.Store(id='loaded_data'),
             #
             html.Div([
                 html.Label('Province'),
@@ -52,10 +58,9 @@ app.layout = html.Div([
 # =================================================================
 @app.callback(
     Output("graph", "figure"),
-    [Input("province", "value"),
-     Input('button_load', 'n_clicks_timestamp')]
+    [Input("province", "value")]
 )
-def update_graph(provinces, time_clicks):
+def update_graph(provinces):
     traces = []
 
     # ...
@@ -67,6 +72,11 @@ def update_graph(provinces, time_clicks):
                                          highlighted=highlighted)
     # ...
 
+    # ...
+    traces += plotly_country_n_patients(d_barycenters, namespace['patients'])
+    # ...
+
+    # ...
     showlegend = False
     layout = go.Layout( xaxis=dict(showticklabels=False,
                                    showgrid=False,
@@ -82,6 +92,7 @@ def update_graph(provinces, time_clicks):
                         paper_bgcolor='rgba(0,0,0,0)',
                         plot_bgcolor='rgba(0,0,0,0)',
                       )
+    # ...
 
     return {'data': traces, 'layout': layout}
 
