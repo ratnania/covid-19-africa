@@ -11,6 +11,7 @@ import numpy as np
 from pandas import read_csv
 import pandas as pd
 from datetime import datetime as dt
+import datetime
 
 from utilities import load_country_map
 from utilities import load_country_patients
@@ -60,7 +61,8 @@ app.layout = html.Div([
             html.Div([
                 dcc.DatePickerRange(id='date-picker-range',
                                     start_date=dt(2020, 3, 2),
-                                    end_date_placeholder_text='Select a date!'),
+                                    end_date=datetime.date.today()),
+#                                    end_date_placeholder_text='Select a date!',
             ]),
             html.Div([
                 html.Div([dcc.Graph(id="graph")]),
@@ -133,8 +135,8 @@ def update_graph(provinces, start_date, end_date):
 
     # ...
     layout = go.Layout( xaxis=dict(showticklabels=True,
-                                   showgrid=True,
-                                   zeroline=True),
+                                   showgrid=False,
+                                   zeroline=False),
                         yaxis=dict(scaleanchor="x",
                                    scaleratio=1,
                                    showticklabels=True,
@@ -158,17 +160,25 @@ def update_graph(provinces, start_date, end_date):
     # ...
 
     # ...
+    df0 =  pd.DataFrame([0, 0], index=pd.to_datetime([start_date, end_date]))
+
     for province in provinces:
         _df = df[df['province'] == province]
-        counts =_df[date_key].value_counts()
 
-        dates = counts.axes[0]
+        dt_series = _df[date_key].value_counts()
+        dt_series = dt_series.append(df0)
+
+        dt_series.sort_index(inplace=True)
+        dt_series = dt_series.asfreq('D')
+        dt_series = dt_series.fillna(0)
+        dt_series = dt_series.cumsum()
+
+        dates = dt_series.axes[0]
         days = dates.day
         months = dates.month
         dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
 
-        values = counts.values
-        values = [values[:n+1].sum() for n in range(0, len(values))]
+        values = dt_series.values[:,0]
 
         line_marker = dict(width=2)
 
