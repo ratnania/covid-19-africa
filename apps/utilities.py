@@ -7,6 +7,7 @@ import os
 
 import numpy as np
 from pandas import read_csv
+import yaml
 
 # *******************************************************************
 # Load data utilities
@@ -62,11 +63,13 @@ def read_deaths_cases():
 # *******************************************************************
 
 
+# =================================================================
 def normalize_date(date):
     month, day, year = date.split('/')
     return '{day}/{month}'.format(day=day, month=month)
 
 
+# =================================================================
 def select_data_by_country(df, country):
     key_selection = 'Country/Region'
     # TODO improve the case such as France
@@ -87,6 +90,7 @@ def select_data_by_country(df, country):
     return t,y
 
 
+# =================================================================
 def plot_matplotlib(df):
     """
     used for testing
@@ -109,7 +113,27 @@ def plot_matplotlib(df):
     plt.legend()
     plt.show()
 
+# =================================================================
+def load_country_map(country):
+    """ contours for a country """
 
+    # ...
+    fname = '../datasets/{country}/contours.yml'.format(country=country.lower())
+    with open(fname) as f:
+        d = yaml.load(f, Loader=yaml.Loader)
+        d_contours = {}
+        for k,v in d.items():
+            x = np.array(v, dtype=int)
+            y = x.reshape((len(x)//2,2))
+            d_contours[k] = y
+    # ...
+
+    namespace = {}
+    namespace['contours'] = d_contours
+
+    return namespace
+
+########################################################################
 if __name__ == '__main__':
 #    clean_dataset()
 #    update_dataset()
