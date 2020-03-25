@@ -43,7 +43,7 @@ app.layout = html.Div([
     #
     html.Div(className='Container', children=[
         html.Div(className='seven columns', children=[
-            html.Div([dcc.Graph(id="graph")]),
+            html.Div([dcc.Graph(id="map")]),
         ]),
         #
         html.Div(className='four columns', children=[
@@ -61,7 +61,9 @@ app.layout = html.Div([
                 dcc.DatePickerRange(id='date-picker-range',
                                     start_date=dt(2020, 3, 2),
                                     end_date_placeholder_text='Select a date!'),
-                html.Div(id='output-container-date-picker-range')
+            ]),
+            html.Div([
+                html.Div([dcc.Graph(id="graph")]),
             ]),
         ]),
     ])
@@ -69,12 +71,12 @@ app.layout = html.Div([
 
 # =================================================================
 @app.callback(
-    Output("graph", "figure"),
+    Output("map", "figure"),
     [Input("province", "value"),
      Input('date-picker-range', 'start_date'),
      Input('date-picker-range', 'end_date')]
 )
-def update_graph(provinces, start_date, end_date):
+def update_map(provinces, start_date, end_date):
 
     # ...
     # TODO we should use dash storage
@@ -117,6 +119,72 @@ def update_graph(provinces, start_date, end_date):
     # ...
 
     return {'data': traces, 'layout': layout}
+
+# =================================================================
+@app.callback(
+    Output("graph", "figure"),
+    [Input("province", "value"),
+     Input('date-picker-range', 'start_date'),
+     Input('date-picker-range', 'end_date')]
+)
+def update_graph(provinces, start_date, end_date):
+
+    traces = []
+
+    # ...
+    layout = go.Layout( xaxis=dict(showticklabels=True,
+                                   showgrid=True,
+                                   zeroline=True),
+                        yaxis=dict(scaleanchor="x",
+                                   scaleratio=1,
+                                   showticklabels=True,
+                                   showgrid=True,
+                                   showline=True,
+                                   zeroline=True),
+                        showlegend=True,
+                        paper_bgcolor='rgba(0,0,0,0)',
+                        plot_bgcolor='rgba(0,0,0,0)',
+                      )
+    # ...
+
+    if len(provinces) == 0:
+        return {'data': traces, 'layout': layout}
+
+    # ...
+    # TODO we should use dash storage
+    date_key = 'confirmed_date'
+
+    df = select_by_date(namespace['patients'], date_key, start_date, end_date)
+    # ...
+
+    # ...
+    for province in provinces:
+        _df = df[df['province'] == province]
+        counts =_df[date_key].value_counts()
+
+        dates = counts.axes[0]
+        days = dates.day
+        months = dates.month
+        dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
+
+        values = counts.values
+        values = [values[:n+1].sum() for n in range(0, len(values))]
+
+        line_marker = dict(width=2)
+
+        trace = go.Scatter(
+            x=dates,
+            y=values,
+            mode = 'lines',
+            name=province,
+            line=line_marker,
+        )
+
+        traces.append(trace)
+    # ...
+
+    return {'data': traces, 'layout': layout}
+
 
 
 ###########################################################
