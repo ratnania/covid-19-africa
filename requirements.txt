@@ -8,3 +8,6 @@ dash
 dash_daq
 dataflows
 datapackage
+dash
+dash-html-components
+dash-core-components
