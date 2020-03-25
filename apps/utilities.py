@@ -141,11 +141,11 @@ def plotly_country_map(province, contour, highlighted=False):
     x = contour[:,0]
     y = contour[:,1]
 
-    color = 'red'
+    fillcolor = '#777495'
     if highlighted:
-        color = 'yellow'
+        fillcolor = '#C9B7BA'
 
-    line_marker = dict(color=color, width=2)
+    line_marker = dict(color='#455462', width=2)
 
     trace_crv = go.Scatter(
         x=x,
@@ -153,6 +153,8 @@ def plotly_country_map(province, contour, highlighted=False):
         mode = 'lines',
 #        name=province,
         line=line_marker,
+        fill='toself',
+        fillcolor = fillcolor,
     )
 
     return [trace_crv]

@@ -78,7 +78,10 @@ def update_graph(provinces, time_clicks):
                                    showgrid=False,
                                    showline=False,
                                    zeroline=False),
-                        showlegend=showlegend )
+                        showlegend=showlegend,
+                        paper_bgcolor='rgba(0,0,0,0)',
+                        plot_bgcolor='rgba(0,0,0,0)',
+                      )
 
     return {'data': traces, 'layout': layout}
 
