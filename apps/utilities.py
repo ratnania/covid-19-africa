@@ -133,6 +133,24 @@ def load_country_map(country):
 
     return namespace
 
+# =================================================================
+def plotly_country_map(province, contour):
+
+    x = contour[:,0]
+    y = contour[:,1]
+
+    line_marker = dict(width=2)
+
+    trace_crv = go.Scatter(
+        x=x,
+        y=y,
+        mode = 'lines',
+        name=province,
+        line=line_marker,
+    )
+
+    return [trace_crv]
+
 ########################################################################
 if __name__ == '__main__':
 #    clean_dataset()

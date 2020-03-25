@@ -9,6 +9,7 @@ import numpy as np
 from pandas import read_csv
 
 from utilities import load_country_map
+from utilities import plotly_country_map
 
 # ...
 COUNTRY = 'Morocco'
@@ -21,24 +22,6 @@ text_style = dict(color='#444', fontFamily='sans-serif', fontWeight=300)
 # ...
 
 namespace = load_country_map(COUNTRY)
-
-# =================================================================
-def plot_data(province, contour):
-
-    x = contour[:,0]
-    y = contour[:,1]
-
-    line_marker = dict(width=2)
-
-    trace_crv = go.Scatter(
-        x=x,
-        y=y,
-        mode = 'lines',
-        name=province,
-        line=line_marker,
-    )
-
-    return [trace_crv]
 
 # =================================================================
 app.layout = html.Div([
@@ -65,7 +48,7 @@ def update_graph(time_clicks):
     if 'contours' in list(namespace.keys()):
         d_contours = namespace['contours']
         for province, contour in d_contours.items():
-            traces += plot_data(province, contour)
+            traces += plotly_country_map(province, contour)
     # ...
 
     layout = go.Layout( xaxis=dict(showticklabels=False,
