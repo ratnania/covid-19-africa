@@ -9,6 +9,8 @@ import numpy as np
 from pandas import read_csv
 import yaml
 
+import plotly.graph_objs as go
+
 # *******************************************************************
 # Load data utilities
 # *******************************************************************
