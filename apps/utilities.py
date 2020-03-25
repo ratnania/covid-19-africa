@@ -7,6 +7,8 @@ import os
 
 import numpy as np
 from pandas import read_csv
+from datetime import datetime as dt
+import pandas as pd
 import yaml
 
 import plotly.graph_objs as go
@@ -197,6 +199,28 @@ def compute_barycenters(d_contours):
         d_barycenters[province] = (contour[:,0].mean(), contour[:,1].mean())
 
     return d_barycenters
+
+# =================================================================
+def select_by_date(df, date_key, start_date, end_date):
+
+    if start_date is not None:
+        start_date = dt.strptime(start_date.split('T')[0], '%Y-%m-%d')
+
+    if end_date is not None:
+        end_date = dt.strptime(end_date.split('T')[0], '%Y-%m-%d')
+
+    df[date_key] = pd.to_datetime(df[date_key])
+
+    mask = True
+    if start_date is not None:
+        mask = mask & (df[date_key] > start_date)
+
+    if end_date is not None:
+        mask = mask & (df[date_key] <= end_date)
+
+    df = df.loc[mask]
+    return df
+
 
 
 ########################################################################
