@@ -1,145 +1,145 @@
 ,sex,age,country,province,disease,group,exposure_start,exposure_end,infection_reason,infection_order,infected_by,contact_number,confirmed_date,released_date,deceased_date,state
-0,,,,,,,,,visit to Italy,,,,3/2/20,,,isolated
-1,female,89,,Fes - Meknes,,,,,visit to Italy,,,,3/5/20,,,isolated
-2,male,,,Marrakech – Safi,,,,,visit to France,,,,3/10/20,,,isolated
-3,female,,,Marrakech – Safi,,,,,contact with patient,,,,3/11/20,,,isolated
-4,female,,,Marrakech – Safi,,,,,contact with patient,,,,3/11/20,,,isolated
-5,female,64,,Marrakech – Safi,,,,,visit to France,,,,3/11/20,,,isolated
-6,male,,,Casablanca – Settat,,,,,visit to Spain,,,,3/13/20,,,isolated
-7,female,,,Taroudant,,,,,visit to France,,,,3/13/20,,,isolated
-8,,,,Fes - Meknes,,,,,visit to Spain,,,,3/14/20,,,isolated
-9,,,,Ed Dakhla - Oued ed Dahab,,,,,visit to Spain,,,,3/14/20,,,isolated
-10,,,,Ed Dakhla - Oued ed Dahab,,,,,visit to Spain,,,,3/14/20,,,isolated
-11,,,,Ed Dakhla - Oued ed Dahab,,,,,visit to Spain,,,,3/14/20,,,isolated
-12,,,,Beni Mellal - Khenifra,,,,,visit to Italy,,,,3/14/20,,,isolated
-13,,,,Beni Mellal - Khenifra,,,,,visit to Italy,,,,3/14/20,,,isolated
-14,,,,Beni Mellal - Khenifra,,,,,visit to Italy,,,,3/14/20,,,isolated
-15,,,,Daraa - Tafilalet,,,,,visit to France,,,,3/14/20,,,isolated
-16,,,,Daraa - Tafilalet,,,,,contact with patient,,,,3/14/20,,,isolated
-17,male,,,Daraa - Tafilalet,,,,,visit to Europe,,,,3/14/20,,,isolated
-18,,,,Ed Dakhla - Oued ed Dahab,,,,,visit to Italy,,,,3/15/20,,,isolated
-19,,,,Marrakech - Safi,,,,,visit to Italy,,,,3/15/20,,,isolated
-20,,,,Marrakech - Safi,,,,,visit to France,,,,3/15/20,,,isolated
-21,,,,Marrakech - Safi,,,,,visit to France,,,,3/15/20,,,isolated
-22,,,,Marrakech - Safi,,,,,visit to Spain,,,,3/15/20,,,isolated
-23,,,,Marrakech - Safi,,,,,visit to Spain,,,,3/15/20,,,isolated
-24,,,,Marrakech - Safi,,,,,visit to Spain,,,,3/15/20,,,isolated
-25,,,,Marrakech - Safi,,,,,visit to Spain,,,,3/15/20,,,isolated
-26,,,,Marrakech - Safi,,,,,visit to Spain,,,,3/15/20,,,isolated
-27,,,,Oriental,,,,,visit to Spain,,,,3/15/20,,,isolated
-28,,,,Oriental,,,,,visit to Austria,,,,3/15/20,,,isolated
-29,,,,Oriental,,,,,,,,,3/16/20,,,isolated
-30,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/16/20,,,isolated
-31,,,,asablanca - Settat,,,,,,,,,3/16/20,,,isolated
-32,,,,asablanca - Settat,,,,,,,,,3/16/20,,,isolated
-33,,,,asablanca - Settat,,,,,,,,,3/16/20,,,isolated
-34,,,,asablanca - Settat,,,,,,,,,3/16/20,,,isolated
-35,,,,asablanca - Settat,,,,,,,,,3/16/20,,,isolated
-36,,,,asablanca - Settat,,,,,,,,,3/16/20,,,isolated
-37,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/16/20,,,isolated
-38,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/17/20,,,isolated
-39,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/20,,,isolated
-40,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/20,,,isolated
-41,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/20,,,isolated
-42,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/20,,,isolated
-43,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/20,,,isolated
-44,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/20,,,isolated
-45,,,,Rabat - Sale - Kenitra,,,,,,,,,3/18/20,,,isolated
-46,,,,Rabat - Sale - Kenitra,,,,,,,,,3/18/20,,,isolated
-47,,,,Laayoune - Saguia al hamra,,,,,,,,,3/18/20,,,isolated
-48,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/18/20,,,isolated
-49,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/18/20,,,isolated
-50,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/18/20,,,isolated
-51,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/18/20,,,isolated
-52,,,,Guelmim - Oued Noun,,,,,,,,,3/18/20,,,isolated
-53,,,,Souss - Massa,,,,,,,,,3/18/20,,,isolated
-54,,,,Souss - Massa,,,,,,,,,3/18/20,,,isolated
-55,,,,Souss - Massa,,,,,,,,,3/19/20,,,isolated
-56,,,,Souss - Massa,,,,,,,,,3/19/20,,,isolated
-57,,,,Souss - Massa,,,,,,,,,3/19/20,,,isolated
-58,,,,Souss - Massa,,,,,,,,,3/19/20,,,isolated
-59,,,,Souss - Massa,,,,,,,,,3/19/20,,,isolated
-60,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/19/20,,,isolated
-61,,,,Laayoune - Saguia al hamra,,,,,,,,,3/19/20,,,isolated
-62,,,,Casablanca - Settat,,,,,,,,,3/19/20,,,isolated
-63,,,,Casablanca - Settat,,,,,,,,,3/19/20,,,isolated
-64,,,,Casablanca - Settat,,,,,,,,,3/20/20,,,isolated
-65,,,,Casablanca - Settat,,,,,,,,,3/20/20,,,isolated
-66,,,,Casablanca - Settat,,,,,,,,,3/20/20,,,isolated
-67,,,,Casablanca - Settat,,,,,,,,,3/20/20,,,isolated
-68,,,,Casablanca - Settat,,,,,,,,,3/20/20,,,isolated
-69,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/20,,,isolated
-70,,,,Fes - Meknes,,,,,,,,,3/20/20,,,isolated
-71,,,,Fes - Meknes,,,,,,,,,3/20/20,,,isolated
-72,,,,Fes - Meknes,,,,,,,,,3/20/20,,,isolated
-73,,,,Fes - Meknes,,,,,,,,,3/20/20,,,isolated
-74,,,,Fes - Meknes,,,,,,,,,3/20/20,,,isolated
-75,,,,Fes - Meknes,,,,,,,,,3/20/20,,,isolated
-76,,,,Fes - Meknes,,,,,,,,,3/20/20,,,isolated
-77,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/20,,,isolated
-78,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/20,,,isolated
-79,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/20,,,isolated
-80,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/20,,,isolated
-81,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/20,,,isolated
-82,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/20,,,isolated
-83,,,,Guelmim - Oued Noun,,,,,,,,,3/20/20,,,isolated
-84,,,,Rabat - Sale - Kenitra,,,,,,,,,3/20/20,,,isolated
-85,,,,Rabat - Sale - Kenitra,,,,,,,,,3/20/20,,,isolated
-86,,,,Rabat - Sale - Kenitra,,,,,,,,,3/20/20,,,isolated
-87,,,,Rabat - Sale - Kenitra,,,,,,,,,3/21/20,,,isolated
-88,,,,Rabat - Sale - Kenitra,,,,,,,,,3/21/20,,,isolated
-89,,,,Rabat - Sale - Kenitra,,,,,,,,,3/21/20,,,isolated
-90,,,,Rabat - Sale - Kenitra,,,,,,,,,3/21/20,,,isolated
-91,,,,Rabat - Sale - Kenitra,,,,,,,,,3/21/20,,,isolated
-92,,,,Laayoune - Saguia al hamra,,,,,,,,,3/21/20,,,isolated
-93,,,,Laayoune - Saguia al hamra,,,,,,,,,3/21/20,,,isolated
-94,,,,Laayoune - Saguia al hamra,,,,,,,,,3/21/20,,,isolated
-95,,,,Laayoune - Saguia al hamra,,,,,,,,,3/21/20,,,isolated
-96,,,,Casablanca - Settat,,,,,,,,,3/21/20,,,isolated
-97,,,,Casablanca - Settat,,,,,,,,,3/22/20,,,isolated
-98,,,,Casablanca - Settat,,,,,,,,,3/22/20,,,isolated
-99,,,,Casablanca - Settat,,,,,,,,,3/22/20,,,isolated
-100,,,,Guelmim - Oued Noun,,,,,,,,,3/22/20,,,isolated
-101,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-102,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-103,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-104,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-105,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-106,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-107,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-108,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-109,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-110,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-111,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
-112,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
-113,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
-114,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
-115,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
-116,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-117,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-118,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-119,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-120,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-121,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-122,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-123,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-124,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-125,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/20,,,isolated
-126,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/20,,,isolated
-127,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/20,,,isolated
-128,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/20,,,isolated
-129,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/20,,,isolated
-130,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/20,,,isolated
-131,,,,Laayoune - Saguia al hamra,,,,,,,,,3/23/20,,,isolated
-132,,,,Laayoune - Saguia al hamra,,,,,,,,,3/23/20,,,isolated
-133,,,,Laayoune - Saguia al hamra,,,,,,,,,3/23/20,,,isolated
-134,,,,Laayoune - Saguia al hamra,,,,,,,,,3/23/20,,,isolated
-135,,,,Laayoune - Saguia al hamra,,,,,,,,,3/23/20,,,isolated
-136,,,,Daraa - Tafilalet,,,,,,,,,3/23/20,,,isolated
-137,,,,Daraa - Tafilalet,,,,,,,,,3/23/20,,,isolated
-138,,,,Daraa - Tafilalet,,,,,,,,,3/23/20,,,isolated
-139,,,,Daraa - Tafilalet,,,,,,,,,3/23/20,,,isolated
-140,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-141,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-142,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
-143,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
+0,,,,,,,,,visit to Italy,,,,3/2/2020,,,isolated
+1,female,89,,Fes - Meknes,,,,,visit to Italy,,,,3/5/2020,,,isolated
+2,male,,,Marrakech – Safi,,,,,visit to France,,,,3/10/2020,,,isolated
+3,female,,,Marrakech – Safi,,,,,contact with patient,,,,3/11/2020,,,isolated
+4,female,,,Marrakech – Safi,,,,,contact with patient,,,,3/11/2020,,,isolated
+5,female,64,,Marrakech – Safi,,,,,visit to France,,,,3/11/2020,,,isolated
+6,male,,,Casablanca – Settat,,,,,visit to Spain,,,,3/13/2020,,,isolated
+7,female,,,Taroudant,,,,,visit to France,,,,3/13/2020,,,isolated
+8,,,,Fes - Meknes,,,,,visit to Spain,,,,3/14/2020,,,isolated
+9,,,,Ed Dakhla - Oued ed Dahab,,,,,visit to Spain,,,,3/14/2020,,,isolated
+10,,,,Ed Dakhla - Oued ed Dahab,,,,,visit to Spain,,,,3/14/2020,,,isolated
+11,,,,Ed Dakhla - Oued ed Dahab,,,,,visit to Spain,,,,3/14/2020,,,isolated
+12,,,,Beni Mellal - Khenifra,,,,,visit to Italy,,,,3/14/2020,,,isolated
+13,,,,Beni Mellal - Khenifra,,,,,visit to Italy,,,,3/14/2020,,,isolated
+14,,,,Beni Mellal - Khenifra,,,,,visit to Italy,,,,3/14/2020,,,isolated
+15,,,,Daraa - Tafilalet,,,,,visit to France,,,,3/14/2020,,,isolated
+16,,,,Daraa - Tafilalet,,,,,contact with patient,,,,3/14/2020,,,isolated
+17,male,,,Daraa - Tafilalet,,,,,visit to Europe,,,,3/14/2020,,,isolated
+18,,,,Ed Dakhla - Oued ed Dahab,,,,,visit to Italy,,,,3/15/2020,,,isolated
+19,,,,Marrakech - Safi,,,,,visit to Italy,,,,3/15/2020,,,isolated
+20,,,,Marrakech - Safi,,,,,visit to France,,,,3/15/2020,,,isolated
+21,,,,Marrakech - Safi,,,,,visit to France,,,,3/15/2020,,,isolated
+22,,,,Marrakech - Safi,,,,,visit to Spain,,,,3/15/2020,,,isolated
+23,,,,Marrakech - Safi,,,,,visit to Spain,,,,3/15/2020,,,isolated
+24,,,,Marrakech - Safi,,,,,visit to Spain,,,,3/15/2020,,,isolated
+25,,,,Marrakech - Safi,,,,,visit to Spain,,,,3/15/2020,,,isolated
+26,,,,Marrakech - Safi,,,,,visit to Spain,,,,3/15/2020,,,isolated
+27,,,,Oriental,,,,,visit to Spain,,,,3/15/2020,,,isolated
+28,,,,Oriental,,,,,visit to Austria,,,,3/15/2020,,,isolated
+29,,,,Oriental,,,,,,,,,3/16/2020,,,isolated
+30,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/16/2020,,,isolated
+31,,,,asablanca - Settat,,,,,,,,,3/16/2020,,,isolated
+32,,,,asablanca - Settat,,,,,,,,,3/16/2020,,,isolated
+33,,,,asablanca - Settat,,,,,,,,,3/16/2020,,,isolated
+34,,,,asablanca - Settat,,,,,,,,,3/16/2020,,,isolated
+35,,,,asablanca - Settat,,,,,,,,,3/16/2020,,,isolated
+36,,,,asablanca - Settat,,,,,,,,,3/16/2020,,,isolated
+37,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/16/2020,,,isolated
+38,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/17/2020,,,isolated
+39,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/2020,,,isolated
+40,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/2020,,,isolated
+41,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/2020,,,isolated
+42,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/2020,,,isolated
+43,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/2020,,,isolated
+44,,,,Rabat - Sale - Kenitra,,,,,,,,,3/17/2020,,,isolated
+45,,,,Rabat - Sale - Kenitra,,,,,,,,,3/18/2020,,,isolated
+46,,,,Rabat - Sale - Kenitra,,,,,,,,,3/18/2020,,,isolated
+47,,,,Laayoune - Saguia al hamra,,,,,,,,,3/18/2020,,,isolated
+48,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/18/2020,,,isolated
+49,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/18/2020,,,isolated
+50,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/18/2020,,,isolated
+51,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/18/2020,,,isolated
+52,,,,Guelmim - Oued Noun,,,,,,,,,3/18/2020,,,isolated
+53,,,,Souss - Massa,,,,,,,,,3/18/2020,,,isolated
+54,,,,Souss - Massa,,,,,,,,,3/18/2020,,,isolated
+55,,,,Souss - Massa,,,,,,,,,3/19/2020,,,isolated
+56,,,,Souss - Massa,,,,,,,,,3/19/2020,,,isolated
+57,,,,Souss - Massa,,,,,,,,,3/19/2020,,,isolated
+58,,,,Souss - Massa,,,,,,,,,3/19/2020,,,isolated
+59,,,,Souss - Massa,,,,,,,,,3/19/2020,,,isolated
+60,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/19/2020,,,isolated
+61,,,,Laayoune - Saguia al hamra,,,,,,,,,3/19/2020,,,isolated
+62,,,,Casablanca - Settat,,,,,,,,,3/19/2020,,,isolated
+63,,,,Casablanca - Settat,,,,,,,,,3/19/2020,,,isolated
+64,,,,Casablanca - Settat,,,,,,,,,3/20/2020,,,isolated
+65,,,,Casablanca - Settat,,,,,,,,,3/20/2020,,,isolated
+66,,,,Casablanca - Settat,,,,,,,,,3/20/2020,,,isolated
+67,,,,Casablanca - Settat,,,,,,,,,3/20/2020,,,isolated
+68,,,,Casablanca - Settat,,,,,,,,,3/20/2020,,,isolated
+69,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/2020,,,isolated
+70,,,,Fes - Meknes,,,,,,,,,3/20/2020,,,isolated
+71,,,,Fes - Meknes,,,,,,,,,3/20/2020,,,isolated
+72,,,,Fes - Meknes,,,,,,,,,3/20/2020,,,isolated
+73,,,,Fes - Meknes,,,,,,,,,3/20/2020,,,isolated
+74,,,,Fes - Meknes,,,,,,,,,3/20/2020,,,isolated
+75,,,,Fes - Meknes,,,,,,,,,3/20/2020,,,isolated
+76,,,,Fes - Meknes,,,,,,,,,3/20/2020,,,isolated
+77,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/2020,,,isolated
+78,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/2020,,,isolated
+79,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/2020,,,isolated
+80,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/2020,,,isolated
+81,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/2020,,,isolated
+82,,,,Ed Dakhla - Oued ed Dahab,,,,,,,,,3/20/2020,,,isolated
+83,,,,Guelmim - Oued Noun,,,,,,,,,3/20/2020,,,isolated
+84,,,,Rabat - Sale - Kenitra,,,,,,,,,3/20/2020,,,isolated
+85,,,,Rabat - Sale - Kenitra,,,,,,,,,3/20/2020,,,isolated
+86,,,,Rabat - Sale - Kenitra,,,,,,,,,3/20/2020,,,isolated
+87,,,,Rabat - Sale - Kenitra,,,,,,,,,3/21/2020,,,isolated
+88,,,,Rabat - Sale - Kenitra,,,,,,,,,3/21/2020,,,isolated
+89,,,,Rabat - Sale - Kenitra,,,,,,,,,3/21/2020,,,isolated
+90,,,,Rabat - Sale - Kenitra,,,,,,,,,3/21/2020,,,isolated
+91,,,,Rabat - Sale - Kenitra,,,,,,,,,3/21/2020,,,isolated
+92,,,,Laayoune - Saguia al hamra,,,,,,,,,3/21/2020,,,isolated
+93,,,,Laayoune - Saguia al hamra,,,,,,,,,3/21/2020,,,isolated
+94,,,,Laayoune - Saguia al hamra,,,,,,,,,3/21/2020,,,isolated
+95,,,,Laayoune - Saguia al hamra,,,,,,,,,3/21/2020,,,isolated
+96,,,,Casablanca - Settat,,,,,,,,,3/21/2020,,,isolated
+97,,,,Casablanca - Settat,,,,,,,,,3/22/2020,,,isolated
+98,,,,Casablanca - Settat,,,,,,,,,3/22/2020,,,isolated
+99,,,,Casablanca - Settat,,,,,,,,,3/22/2020,,,isolated
+100,,,,Guelmim - Oued Noun,,,,,,,,,3/22/2020,,,isolated
+101,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+102,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+103,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+104,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+105,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+106,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+107,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+108,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+109,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+110,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+111,,,,Marrakech - Safi,,,,,,,,,3/22/2020,,,isolated
+112,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/2020,,,isolated
+113,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/2020,,,isolated
+114,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/2020,,,isolated
+115,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/2020,,,isolated
+116,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+117,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+118,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+119,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+120,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+121,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+122,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+123,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+124,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+125,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/2020,,,isolated
+126,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/2020,,,isolated
+127,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/2020,,,isolated
+128,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/2020,,,isolated
+129,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/2020,,,isolated
+130,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/2020,,,isolated
+131,,,,Laayoune - Saguia al hamra,,,,,,,,,3/23/2020,,,isolated
+132,,,,Laayoune - Saguia al hamra,,,,,,,,,3/23/2020,,,isolated
+133,,,,Laayoune - Saguia al hamra,,,,,,,,,3/23/2020,,,isolated
+134,,,,Laayoune - Saguia al hamra,,,,,,,,,3/23/2020,,,isolated
+135,,,,Laayoune - Saguia al hamra,,,,,,,,,3/23/2020,,,isolated
+136,,,,Daraa - Tafilalet,,,,,,,,,3/23/2020,,,isolated
+137,,,,Daraa - Tafilalet,,,,,,,,,3/23/2020,,,isolated
+138,,,,Daraa - Tafilalet,,,,,,,,,3/23/2020,,,isolated
+139,,,,Daraa - Tafilalet,,,,,,,,,3/23/2020,,,isolated
+140,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+141,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+142,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated
+143,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/2020,,,isolated

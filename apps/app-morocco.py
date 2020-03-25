@@ -4,10 +4,12 @@ import dash_core_components as dcc
 import dash_html_components as html
 import dash_daq             as daq
 from dash.dependencies import Output, Input, State
+from datetime import datetime as dt
 
 import plotly.graph_objs as go
 import numpy as np
 from pandas import read_csv
+import pandas as pd
 
 from utilities import load_country_map
 from utilities import load_country_patients
@@ -51,9 +53,53 @@ app.layout = html.Div([
                              value=[],
                              multi=True),
             ]),
+            html.Label('Period'),
+            html.Div([
+                dcc.DatePickerRange(id='date-picker-range',
+                                    start_date=dt(2020, 3, 2),
+                                    end_date_placeholder_text='Select a date!'),
+                html.Div(id='output-container-date-picker-range')
+            ]),
         ]),
     ])
 ])
+
+# =================================================================
+@app.callback(
+    Output('output-container-date-picker-range', 'children'),
+    [Input('date-picker-range', 'start_date'),
+     Input('date-picker-range', 'end_date')])
+def update_output(start_date, end_date):
+
+    string_prefix = 'You have selected: '
+    if start_date is not None:
+        start_date = dt.strptime(start_date.split('T')[0], '%Y-%m-%d')
+        start_date_string = start_date.strftime('%B %d, %Y')
+        string_prefix = string_prefix + 'Start Date: ' + start_date_string + ' | '
+
+    if end_date is not None:
+        end_date = dt.strptime(end_date.split('T')[0], '%Y-%m-%d')
+        end_date_string = end_date.strftime('%B %d, %Y')
+        string_prefix = string_prefix + 'End Date: ' + end_date_string
+
+    DATE_KEY = 'confirmed_date'
+    df = namespace['patients']
+    df[DATE_KEY] = pd.to_datetime(df[DATE_KEY])
+
+    mask = True
+    if start_date is not None:
+        mask = mask & (df[DATE_KEY] > start_date)
+
+    if end_date is not None:
+        mask = mask & (df[DATE_KEY] <= end_date)
+
+    df = df.loc[mask]
+    print(df)
+
+    if len(string_prefix) == len('You have selected: '):
+        return 'Select a date to see it displayed here'
+    else:
+        return string_prefix
 
 # =================================================================
 @app.callback(
