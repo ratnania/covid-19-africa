@@ -4,6 +4,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_daq             as daq
+import dash_bootstrap_components as dbc
 from dash.dependencies import Output, Input, State
 
 import plotly.graph_objs as go
@@ -25,7 +26,11 @@ COUNTRY = 'Morocco'
 # ...
 
 # ...
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+colors = {
+    'background': '#FFFFFF',
+    'text': '#7FDBFF'
+}
 # ...
 
 # ...
@@ -39,37 +44,85 @@ d_barycenters = compute_barycenters(namespace['contours'])
 # ...
 
 # =================================================================
-app.layout = html.Div([
-    html.H2('COVID-19'),
-    #
-    html.Div(className='Container', children=[
-        html.Div(className='seven columns', children=[
-            html.Div([dcc.Graph(id="map")]),
-        ]),
-        #
-        html.Div(className='four columns', children=[
-            #
-            html.Div([
-                html.Label('Province'),
-                dcc.Dropdown(id="province",
+
+app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
+    [
+        #=========================== HEADER ======================
+        dbc.Row(
+            [
+                dbc.Col(html.Div(
+                    html.Img(src='https://msda.um6p.ma/assets/images/um6p-logo.png', style={'height':'50%', 'width':'50%', 'align':'center'})
+                ,className="ml-2"), className="col-md-4 col-sm-12 ml-10"),
+                dbc.Col(html.Div(
+                    html.H4("Covid-19 Morocco", style={'color':'#22549F', 'align':'center'})
+                ), className="col-md-4  col-sm-12"),
+                dbc.Col(html.Div(children=[
+                    html.P(children=["Mohammed VI Polytechnic university", html.Br(),"Modeling, Simulation and Data Analysis"], style={'color':'#22549F', 'align':'center'}),
+                ]), className="col-md-4  col-sm-12"),  
+            ], justify="center", align="center", className="h-50" 
+        ),
+        dbc.Row(
+            [
+                dbc.Col(html.Div(
+                    html.Hr()
+                ), className="col-md-12") 
+            ]
+        ),
+        #=========================== BODY ======================
+        dbc.Row(
+            [
+                dbc.Col(
+                    html.Div(className='seven columns', children=[
+                        html.Div([dcc.Graph(id="map")]),
+                    ]), className="col-md-6"
+                ),
+                dbc.Col(html.Div(children=[
+                    html.Div([
+                        html.Label('Province'),
+                        dcc.Dropdown(id="province",
                              options=[{'label':name, 'value':name}
                                       for name in provinces],
                              value=[],
                              multi=True),
-            ]),
-            html.Label('Period'),
-            html.Div([
-                dcc.DatePickerRange(id='date-picker-range',
+                   ]),
+                    html.Label('Period'),
+                    html.Div([
+                        dcc.DatePickerRange(id='date-picker-range',
                                     start_date=dt(2020, 3, 2),
                                     end_date=datetime.date.today()),
 #                                    end_date_placeholder_text='Select a date!',
-            ]),
-            html.Div([
+                    ])
+                ]), className="col-md-6")  
+            ], 
+        ),
+        dbc.Row(
+            [
+                dbc.Col(html.Div(
+                    html.Div([
                 html.Div([dcc.Graph(id="graph")]),
-            ]),
-        ]),
+            ])
+            ), className="col-md-12"),
+                
+            ], 
+        ),
+   
+         dbc.Row(
+            [
+                dbc.Col(html.Div(
+                    html.Hr()
+            ), className="col-md-12"),
+                
+            ], 
+        ),
+        #=========================== FOOTER ======================
+         dbc.Row(
+            [
+                dbc.Col(html.Div(
+                    html.P('Copyright MSDA © 2020. All rights reserved.', style={'color':'#22549F', 'align':'center'})
+                ), className="col-md-12 text-center"),
+            ], 
+        )
     ])
-])
 
 # =================================================================
 @app.callback(
