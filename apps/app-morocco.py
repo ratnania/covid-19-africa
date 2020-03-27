@@ -27,9 +27,13 @@ COUNTRY = 'Morocco'
 
 # ...
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app.title = 'COVID-19 Morocco'
+
 colors = {
     'background': '#FFFFFF',
-    'text': '#7FDBFF'
+    'text': '#7FDBFF',
+    #'background-body': '#ffe6e6'
+    'background-body':'#b3ccff'
 }
 # ...
 
@@ -45,13 +49,13 @@ d_barycenters = compute_barycenters(namespace['contours'])
 
 # =================================================================
 
-app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
+app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-width': '100%', 'overflow-x': 'hidden'}, children=
     [
         #=========================== HEADER ======================
         dbc.Row(
             [
                 dbc.Col(html.Div(
-                    html.Img(src='https://msda.um6p.ma/assets/images/um6p-logo.png', style={'height':'50%', 'width':'50%', 'align':'center'})
+                    html.Img(src='./assets/images/um6p-logo.png', style={'height':'50%', 'width':'50%', 'align':'center'})
                 ,className="ml-2"), className="col-md-4 col-sm-12 ml-10"),
                 dbc.Col(html.Div(
                     html.H4("Covid-19 Morocco", style={'color':'#22549F', 'align':'center'})
@@ -59,50 +63,55 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                 dbc.Col(html.Div(children=[
                     html.P(children=["Mohammed VI Polytechnic university", html.Br(),"Modeling, Simulation and Data Analysis"], style={'color':'#22549F', 'align':'center'}),
                 ]), className="col-md-4  col-sm-12"),  
-            ], justify="center", align="center", className="h-50" 
+            ], justify="center", align="center", className="h-50", style={'backgroundColor': colors['background']}
         ),
         dbc.Row(
             [
                 dbc.Col(html.Div(
                     html.Hr()
                 ), className="col-md-12") 
-            ]
+            ], style={'backgroundColor': colors['background']}
         ),
         #=========================== BODY ======================
         dbc.Row(
             [
                 dbc.Col(
-                    html.Div(className='seven columns', children=[
+                    html.Div(className='', children=[
                         html.Div([dcc.Graph(id="map")]),
-                    ]), className="col-md-6"
+                    ]), className="col-md-8"
                 ),
-                dbc.Col(html.Div(children=[
-                    html.Div([
-                        html.Label('Province'),
-                        dcc.Dropdown(id="province",
-                             options=[{'label':name, 'value':name}
-                                      for name in provinces],
-                             value=[],
-                             multi=True),
-                   ]),
-                    html.Label('Period'),
-                    html.Div([
-                        dcc.DatePickerRange(id='date-picker-range',
-                                    start_date=dt(2020, 3, 2),
-                                    end_date=datetime.date.today()),
-#                                    end_date_placeholder_text='Select a date!',
+                dbc.Col(
+                    html.Div(children=[
+                    html.Div(children=[
+                        html.Div([
+                            html.Label('Province'),
+                            dcc.Dropdown(id="province",
+                                options=[{'label':name, 'value':name}
+                                        for name in provinces],
+                                value=[],
+                                multi=True),
+                        ]),
+                        html.Label('Period'),
+                        html.Div([
+                            dcc.DatePickerRange(id='date-picker-range',
+                                        start_date=dt(2020, 3, 2),
+                                        end_date=datetime.date.today()),
+    #                                    end_date_placeholder_text='Select a date!',
+                        ])
                     ])
-                ]), className="col-md-6")  
-            ], 
+                ]), className="col-md-4 text-center mt-5 border rounded border-primary")  
+            ], className="mr-2"  
         ),
         dbc.Row(
             [
                 dbc.Col(html.Div(
                     html.Div([
                 html.Div([dcc.Graph(id="graph")]),
-            ])
-            ), className="col-md-12"),
-                
+                ])), className="col-md-6"),
+                dbc.Col(html.Div(
+                    html.Div([
+                html.Div([html.P('TODO Another Graph')]),
+                ])), className="col-md-6"),
             ], 
         ),
    
@@ -112,7 +121,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                     html.Hr()
             ), className="col-md-12"),
                 
-            ], 
+            ], style={'backgroundColor': colors['background']} 
         ),
         #=========================== FOOTER ======================
          dbc.Row(
@@ -120,7 +129,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                 dbc.Col(html.Div(
                     html.P('Copyright MSDA © 2020. All rights reserved.', style={'color':'#22549F', 'align':'center'})
                 ), className="col-md-12 text-center"),
-            ], 
+            ], style={'backgroundColor': colors['background']}
         )
     ])
 
