@@ -26,7 +26,7 @@ COUNTRY = 'Morocco'
 # ...
 
 # ...
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}])
 app.title = 'COVID-19 Morocco'
 
 colors = {
@@ -62,21 +62,14 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
                 ), className="col-md-4  col-sm-12"),
                 dbc.Col(html.Div(children=[
                     html.P(children=["Mohammed VI Polytechnic university", html.Br(),"Modeling, Simulation and Data Analysis"], style={'color':'#22549F', 'align':'center'}),
-                ]), className="col-md-4  col-sm-12"),  
+                ]), className="col-md-4  col-sm-12 text-center"),  
             ], justify="center", align="center", className="h-50", style={'backgroundColor': colors['background']}
-        ),
-        dbc.Row(
-            [
-                dbc.Col(html.Div(
-                    html.Hr()
-                ), className="col-md-12") 
-            ], style={'backgroundColor': colors['background']}
         ),
         #=========================== BODY ======================
         dbc.Row(
             [
                 dbc.Col(
-                    html.Div(className='', children=[
+                    html.Div(className='twelve columns', children=[
                         html.Div([dcc.Graph(id="map")]),
                     ]), className="col-md-8"
                 ),
@@ -97,41 +90,72 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
                                         start_date=dt(2020, 3, 2),
                                         end_date=datetime.date.today()),
     #                                    end_date_placeholder_text='Select a date!',
+                        ]),
+                        html.Label('Other criteria'),
+                        html.Div([
+                           dbc.Checklist(id="criteria",
+                                options=[
+                                    {'label': 'Age', 'value': 'age'},
+                                    {'label': 'Gender', 'value': 'gender'}
+                                ],
+                                value=['age', 'gender'],
+                                inline=True)
                         ])
                     ])
                 ]), className="col-md-4 text-center mt-5 border rounded border-primary")  
-            ], className="mr-2"  
+            ], className="ml-2 mr-2"  
         ),
         dbc.Row(
             [
                 dbc.Col(html.Div(
                     html.Div([
                 html.Div([dcc.Graph(id="graph")]),
-                ])), className="col-md-6"),
-                dbc.Col(html.Div(
-                    html.Div([
-                html.Div([html.P('TODO Another Graph')]),
-                ])), className="col-md-6"),
+                ])), className="col-md-12")
             ], 
         ),
-   
-         dbc.Row(
+        dbc.Row(
             [
-                dbc.Col(html.Div(
-                    html.Hr()
-            ), className="col-md-12"),
-                
-            ], style={'backgroundColor': colors['background']} 
+                dbc.Col(html.Div(id="gender-container",children=[
+                    html.Div([
+                 html.Div([dcc.Graph(id="pieChartGender")]),
+                ])]), className="col-md-6"),
+                dbc.Col(html.Div(id="age-container",children=[
+                    html.Div([
+                 html.Div([dcc.Graph(id="pieChartAge")]),
+                ])]), className="col-md-6"),
+            ], 
         ),
         #=========================== FOOTER ======================
          dbc.Row(
             [
                 dbc.Col(html.Div(
-                    html.P('Copyright MSDA © 2020. All rights reserved.', style={'color':'#22549F', 'align':'center'})
+                    html.P(['Copyright ',html.A('MSDA', href='https://msda.um6p.ma', target='_blank'), ' © 2020. All rights reserved.'], style={'color':'#22549F', 'align':'center'})
                 ), className="col-md-12 text-center"),
             ], style={'backgroundColor': colors['background']}
         )
     ])
+
+# =================================================================
+@app.callback(
+    Output('gender-container', 'style'),
+    [Input('criteria','value')]
+)
+def hideGraphGender(input):
+    if 'gender' in input:
+        return {'display':'block'}
+    else:
+        return {'display':'none'}
+
+# =================================================================
+@app.callback(
+    Output('age-container', 'style'),
+    [Input('criteria','value')]
+)
+def hideGraphAge(input):
+    if 'age' in input:
+        return {'display':'block'}
+    else:
+        return {'display':'none'}
 
 # =================================================================
 @app.callback(
@@ -166,6 +190,7 @@ def update_map(provinces, start_date, end_date):
 
     # ...
     showlegend = False
+    
     layout = go.Layout( xaxis=dict(showticklabels=False,
                                    showgrid=False,
                                    zeroline=False),
@@ -179,9 +204,11 @@ def update_map(provinces, start_date, end_date):
                         showlegend=showlegend,
                         paper_bgcolor='rgba(0,0,0,0)',
                         plot_bgcolor='rgba(0,0,0,0)',
+                        title="Distribution of cases by province",
+                        height=650  # px
                       )
+        
     # ...
-
     return {'data': traces, 'layout': layout}
 
 # =================================================================
@@ -208,6 +235,7 @@ def update_graph(provinces, start_date, end_date):
                         showlegend=True,
                         paper_bgcolor='rgba(0,0,0,0)',
                         plot_bgcolor='rgba(0,0,0,0)',
+                        title="Evolution of COVID-19"
                       )
     # ...
 
@@ -257,7 +285,196 @@ def update_graph(provinces, start_date, end_date):
 
     return {'data': traces, 'layout': layout}
 
+# =================================================================
+@app.callback(
+    Output("pieChartGender", "figure"),
+    [Input("province", "value"),
+     Input('date-picker-range', 'start_date'),
+     Input('date-picker-range', 'end_date'),
+     Input("criteria", "value")]
+)
+def update_pieChartGender(provinces, start_date, end_date, criteria):
 
+    piedata = []
+    labels = []
+    values = []
+    layout = {
+        "title": {
+            "text": "Distribution of cases by gender"
+        },
+        "xaxis": dict(showticklabels=False,
+                    showgrid=False,
+                    zeroline=False),
+        "yaxis": dict(scaleanchor="x",
+                    scaleratio=1,
+                    showticklabels=False,
+                    showgrid=False,
+                    showline=False,
+                    zeroline=True),
+        "paper_bgcolor": 'rgba(0,0,0,0)',
+        "plot_bgcolor": 'rgba(0,0,0,0)',
+        "legend": {
+            "x": 1.037488076311606,
+            "y": 1,
+            "title": {
+                "text": "Gender"
+            },
+            "traceorder": "reversed",
+            "bordercolor": "rgb(68, 68, 68)",
+            "borderwidth": 1,
+            "orientation": "v"
+        },
+    }
+    # ...
+   
+    # ...
+
+    if len(provinces) == 0:
+        return {'data': piedata}
+    if 'gender' not in criteria:
+        return {'data': piedata}
+
+    # ...
+    date_key = 'confirmed_date'
+
+    df = select_by_date(namespace['patients'], date_key, start_date, end_date)
+    # ...
+
+    # ...
+    df0 =  pd.DataFrame([0, 0], index=pd.to_datetime([start_date, end_date]))
+
+    for province in provinces:
+        _df = df[df['province'] == province]
+
+        dt_series = _df[date_key].value_counts()
+        dt_series = dt_series.append(df0)
+        dt_series.sort_index(inplace=True)
+        dt_series = dt_series.asfreq('D')
+        dt_series = dt_series.fillna(0)
+        dt_series = dt_series.cumsum()
+
+        dates = dt_series.axes[0]
+        days = dates.day
+        months = dates.month
+        dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
+        # Construct labels and values of pie: 
+        for sex in _df['sex']:
+            labels.append(sex)
+        for x in range(0, len(_df)):
+	        values.append('1')        
+       
+    # ...
+    piedata = go.Pie(
+            labels = labels,
+            values = values,
+            hoverinfo = 'label+value+percent', textinfo='value',
+            domain = {"column": 0},
+            #title = "gender",
+            hole = .4,
+            type = "pie"
+    )
+
+    return {'data': [piedata],'layout': layout}
+
+# =================================================================
+@app.callback(
+    Output("pieChartAge", "figure"),
+    [Input("province", "value"),
+     Input('date-picker-range', 'start_date'),
+     Input('date-picker-range', 'end_date'),
+     Input("criteria", "value")]
+
+)
+def update_pieChartAge(provinces, start_date, end_date, criteria):
+
+    piedata = []
+    labels = []
+    values = []
+    layout = {
+        "title": {
+            "text": "Distribution of cases by age"
+        },
+        "xaxis": dict(showticklabels=False,
+                    showgrid=False,
+                    zeroline=False),
+        "yaxis": dict(scaleanchor="x",
+                    scaleratio=1,
+                    showticklabels=False,
+                    showgrid=False,
+                    showline=False,
+                    zeroline=True),
+        "paper_bgcolor": 'rgba(0,0,0,0)',
+        "plot_bgcolor": 'rgba(0,0,0,0)',
+        "legend": {
+            "x": 1.037488076311606,
+            "y": 1,
+            "title": {
+                "text": "Age:"
+            },
+            "traceorder": "reversed",
+            "bordercolor": "rgb(68, 68, 68)",
+            "borderwidth": 1,
+            "orientation": "v"
+        },
+    }
+    # ...
+   
+    # ...
+
+    if len(provinces) == 0:
+        return {'data': piedata}
+    if 'age' not in criteria:
+        return {'data': piedata}
+    # ...
+    # TODO we should use dash storage
+    date_key = 'confirmed_date'
+
+    df = select_by_date(namespace['patients'], date_key, start_date, end_date)
+    # ...
+
+    # ...
+    df0 =  pd.DataFrame([0, 0], index=pd.to_datetime([start_date, end_date]))
+
+    for province in provinces:
+        _df = df[df['province'] == province]
+        
+        dt_series = _df[date_key].value_counts()
+        dt_series = dt_series.append(df0)
+        dt_series.sort_index(inplace=True)
+        dt_series = dt_series.asfreq('D')
+        dt_series = dt_series.fillna(0)
+        dt_series = dt_series.cumsum()
+
+        dates = dt_series.axes[0]
+        days = dates.day
+        months = dates.month
+        dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
+        # Construct labels and values of pie:
+        for age in _df['age']:
+            if age <= 15 :
+                labels.append('[00, 15] YEARS')
+            elif age <= 30 :
+                labels.append('[16, 30] YEARS')
+            elif age <= 45 :
+                labels.append('[31, 45] YEARS')
+            elif age <= 60 :
+                labels.append('[46, 60] YEARS')
+            else :
+                labels.append('   > 60  YEARS')
+        for x in range(0, len(_df)):
+	        values.append('1')        
+       
+    # ...
+    piedata = go.Pie(
+            labels = labels,
+            values = values,
+            hoverinfo = 'label+value+percent', textinfo='value',
+            domain = {"column": 0},
+            #title = "Evolution by Age",
+            type = "pie"
+    )
+    
+    return {'data': [piedata],'layout': layout}
 
 ###########################################################
 if __name__ == '__main__':
