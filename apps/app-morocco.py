@@ -338,25 +338,9 @@ def update_pieChartGender(provinces, start_date, end_date, criteria):
     date_key = 'confirmed_date'
 
     df = select_by_date(namespace['patients'], date_key, start_date, end_date)
-    # ...
-
-    # ...
-    df0 =  pd.DataFrame([0, 0], index=pd.to_datetime([start_date, end_date]))
-
+    
     for province in provinces:
         _df = df[df['province'] == province]
-
-        dt_series = _df[date_key].value_counts()
-        dt_series = dt_series.append(df0)
-        dt_series.sort_index(inplace=True)
-        dt_series = dt_series.asfreq('D')
-        dt_series = dt_series.fillna(0)
-        dt_series = dt_series.cumsum()
-
-        dates = dt_series.axes[0]
-        days = dates.day
-        months = dates.month
-        dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
         # Construct labels and values of pie: 
         for sex in _df['sex']:
             labels.append(sex)
@@ -430,25 +414,10 @@ def update_pieChartAge(provinces, start_date, end_date, criteria):
     date_key = 'confirmed_date'
 
     df = select_by_date(namespace['patients'], date_key, start_date, end_date)
-    # ...
-
-    # ...
-    df0 =  pd.DataFrame([0, 0], index=pd.to_datetime([start_date, end_date]))
-
+   
     for province in provinces:
         _df = df[df['province'] == province]
         
-        dt_series = _df[date_key].value_counts()
-        dt_series = dt_series.append(df0)
-        dt_series.sort_index(inplace=True)
-        dt_series = dt_series.asfreq('D')
-        dt_series = dt_series.fillna(0)
-        dt_series = dt_series.cumsum()
-
-        dates = dt_series.axes[0]
-        days = dates.day
-        months = dates.month
-        dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
         # Construct labels and values of pie:
         for age in _df['age']:
             if age <= 15 :
