@@ -310,7 +310,7 @@ def update_pieChartGender(provinces, start_date, end_date, criteria):
                     showticklabels=False,
                     showgrid=False,
                     showline=False,
-                    zeroline=True),
+                    zeroline=False),
         "paper_bgcolor": 'rgba(0,0,0,0)',
         "plot_bgcolor": 'rgba(0,0,0,0)',
         "legend": {
@@ -386,7 +386,7 @@ def update_pieChartAge(provinces, start_date, end_date, criteria):
                     showticklabels=False,
                     showgrid=False,
                     showline=False,
-                    zeroline=True),
+                    zeroline=False),
         "paper_bgcolor": 'rgba(0,0,0,0)',
         "plot_bgcolor": 'rgba(0,0,0,0)',
         "legend": {
