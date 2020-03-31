@@ -44,6 +44,7 @@ namespace['patients'] = load_country_patients(COUNTRY)
 
 provinces = list(namespace['contours'].keys())
 
+
 d_barycenters = compute_barycenters(namespace['contours'])
 # ...
 
@@ -129,7 +130,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
          dbc.Row(
             [
                 dbc.Col(html.Div(
-                    html.P(['Copyright ',html.A('MSDA', href='https://msda.um6p.ma', target='_blank'), ' © 2020. All rights reserved.'], style={'color':'#22549F', 'align':'center'})
+                    html.P(['Last update: ', html.Label(id="updatedAt"), ' ',html.A('MSDA', href='https://msda.um6p.ma', target='_blank'), ' © 2020.'], style={'color':'#22549F', 'align':'center'})
                 ), className="col-md-12 text-center"),
             ], style={'backgroundColor': colors['background']}
         )
@@ -156,6 +157,18 @@ def hideGraphAge(input):
         return {'display':'block'}
     else:
         return {'display':'none'}
+
+# =================================================================
+@app.callback(
+    Output('updatedAt', 'children'),
+     [Input('date-picker-range', 'start_date'),
+     Input('date-picker-range', 'end_date')]
+
+)
+def updatedAt(start_date, end_date):
+    date_key = 'confirmed_date'
+    df = select_by_date(namespace['patients'], date_key, start_date, end_date)
+    return list(df[date_key])[-1].strftime('%d-%m-%Y')
 
 # =================================================================
 @app.callback(
@@ -209,6 +222,7 @@ def update_map(provinces, start_date, end_date):
                       )
         
     # ...
+    
     return {'data': traces, 'layout': layout}
 
 # =================================================================
@@ -257,7 +271,7 @@ def update_graph(provinces, start_date, end_date):
 
         dt_series = _df[date_key].value_counts()
         dt_series = dt_series.append(df0)
-
+        dt_series = dt_series[~dt_series.index.duplicated()]
         dt_series.sort_index(inplace=True)
         dt_series = dt_series.asfreq('D')
         dt_series = dt_series.fillna(0)
@@ -325,10 +339,7 @@ def update_pieChartGender(provinces, start_date, end_date, criteria):
             "orientation": "v"
         },
     }
-    # ...
-   
-    # ...
-
+    
     if len(provinces) == 0:
         return {'data': piedata}
     if 'gender' not in criteria:
