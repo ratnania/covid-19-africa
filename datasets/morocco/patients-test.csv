@@ -1,4 +1,4 @@
-﻿id,sex,age,country,province,disease,group,exposure_start,exposure_end,infection_reason,infection_order,infected_by,contact_number,confirmed_date,released_date,deceased_date,state
+﻿n,sex,age,country,province,disease,group,exposure_start,exposure_end,infection_reason,infection_order,infected_by,contact_number,confirmed_date,released_date,deceased_date,state
 0,male,39,Maroc,Casablanca - Settat,,,,,visit to Italy,,,,02/03/20,17/03/20,,Exit
 1,female,89,Maroc,Casablanca - Settat,1,,,,visit to Italy,,,,05/03/20,,10/03/20,Deceased
 2,male,59,France,Marrakech - Safi,,,07/03/20,,visit to France,,,,10/03/20,29/03/20,,Exit

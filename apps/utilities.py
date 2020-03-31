@@ -179,7 +179,7 @@ def plotly_country_n_patients(d_barycenters, df):
         y=y,
         mode = 'markers',
         marker=dict(color='red'),
-        marker_size=[(i/3) for i in n_patients],
+        marker_size=[(i/6) for i in n_patients],
         hovertext=[str(i)+ ' cases' for i in n_patients],
         hoverinfo='text'
     )
