@@ -73,7 +73,10 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
         dbc.Row(
             [
                 html.Div(html.Div(
-                    html.Img(src='./assets/images/um6p-logo.png', style={'height':'50%', 'width':'50%'})), className="col-md-4  text-center"),
+                    html.A(
+                        html.Img(src='./assets/images/um6p-logo.png', style={'height':'50%', 'width':'50%'}), href='https://msda.um6p.ma', target='_blank'
+                        )
+                    ), className="col-md-4  text-center"),
                 html.Div(html.Div(
                     html.H4("Covid-19 Morocco", style={'color':'#22549F'})
                 ), className="col-md-4 text-center"),
