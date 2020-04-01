@@ -193,6 +193,20 @@ def load_country_patients(country):
     return df
 
 # =================================================================
+def load_country_statistics_age(country):
+    # TODO take patients.csv
+    fname = '../datasets/{country}/statistiques-age.csv'.format(country=country.lower())
+    df = read_csv(fname)
+    return df
+
+# =================================================================
+def load_country_statistics_gender(country):
+    # TODO take patients.csv
+    fname = '../datasets/{country}/statistiques-sex.csv'.format(country=country.lower())
+    df = read_csv(fname)
+    return df
+
+# =================================================================
 def compute_barycenters(d_contours):
     d_barycenters = {}
     for province, contour in d_contours.items():

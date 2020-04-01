@@ -1,0 +1,7 @@
+cle,valeur
+[00 - 05] YEARS,10
+[06 - 15] YEARS,10
+[16 - 25] YEARS,120
+[26 - 40] YEARS,120
+[41 - 65] YEARS,120
+> 65 YEARS,400

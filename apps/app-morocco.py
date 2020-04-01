@@ -16,6 +16,8 @@ import datetime
 
 from utilities import load_country_map
 from utilities import load_country_patients
+from utilities import load_country_statistics_age
+from utilities import load_country_statistics_gender
 from utilities import compute_barycenters
 from utilities import plotly_country_map
 from utilities import plotly_country_n_patients
@@ -54,6 +56,8 @@ layoutEmpty = go.Layout( xaxis=dict(showticklabels=False,
 namespace = {}
 namespace['contours'] = load_country_map(COUNTRY)
 namespace['patients'] = load_country_patients(COUNTRY)
+namespace['statistics_age'] = load_country_statistics_age(COUNTRY)
+namespace['statistics_gender'] = load_country_statistics_gender(COUNTRY)
 
 provinces = list(namespace['contours'].keys())
 
@@ -384,6 +388,22 @@ def update_pieChartGender(provinces, start_date, end_date, criteria):
 	        values.append('1')        
        
     # ...
+    # Check if all lines has value of gender value
+    for i in set(labels):
+        if i not in ['male', 'female']:
+            # we can get statistics from file statics_gender because we have some empty lines in the main file:
+            dfGender = namespace['statistics_gender']
+            labels = []
+            values = []
+            nbrMale = int(dfGender[dfGender['cle'] == 'male']['valeur'])
+            nbrFemale = int(dfGender[dfGender['cle'] == 'female']['valeur'])
+            for line in range(0, nbrMale):
+                labels.append('male')
+                values.append('1')
+            for line in range(0, nbrFemale):
+                labels.append('female')
+                values.append('1')
+
     piedata = go.Pie(
             labels = labels,
             values = values,
@@ -452,20 +472,59 @@ def update_pieChartAge(provinces, start_date, end_date, criteria):
         
         # Construct labels and values of pie:
         for age in _df['age']:
+            if age <= 5 :
+                labels.append('[00 - 05] YEARS')
             if age <= 15 :
-                labels.append('[00, 15] YEARS')
-            elif age <= 30 :
-                labels.append('[16, 30] YEARS')
-            elif age <= 45 :
-                labels.append('[31, 45] YEARS')
-            elif age <= 60 :
-                labels.append('[46, 60] YEARS')
+                labels.append('[06 - 15] YEARS')
+            elif age <= 25 :
+                labels.append('[16 - 25] YEARS')
+            elif age <= 40 :
+                labels.append('[26 - 40] YEARS')
+            elif age <= 65 :
+                labels.append('[41 - 65] YEARS')
+            elif age > 65 :
+                labels.append('> 65  YEARS')
             else :
-                labels.append('   > 60  YEARS')
+                labels.append('OTHERS')
         for x in range(0, len(_df)):
 	        values.append('1')        
        
     # ...
+    # Check if all lines has value of gender value
+    for i in set(labels):
+        if i == 'OTHERS':
+            # we can get statistics from file statics_gender because we have some empty lines in the main file:
+            dfAge = namespace['statistics_age']
+            if len(dfAge['cle']) != 0 :
+                labels = []
+                values = []
+                # Count elements by keys:
+                _0_5 = int(dfAge[dfAge['cle'] == '[00 - 05] YEARS']['valeur'])
+                _6_15 = int(dfAge[dfAge['cle'] == '[06 - 15] YEARS']['valeur'])
+                _16_25 = int(dfAge[dfAge['cle'] == '[16 - 25] YEARS']['valeur'])
+                _26_40 = int(dfAge[dfAge['cle'] == '[26 - 40] YEARS']['valeur'])
+                _41_65 = int(dfAge[dfAge['cle'] == '[41 - 65] YEARS']['valeur'])
+                _sup_65 = int(dfAge[dfAge['cle'] == '> 65 YEARS']['valeur'])
+
+                for line in range(0, _0_5):
+                    labels.append('[00, 05] YEARS')
+                    values.append('1')
+                for line in range(0, _6_15):
+                    labels.append('[06, 15] YEARS')
+                    values.append('1')
+                for line in range(0, _16_25):
+                    labels.append('[16, 25] YEARS')
+                    values.append('1')
+                for line in range(0, _26_40):
+                    labels.append('[26, 40] YEARS')
+                    values.append('1')
+                for line in range(0, _41_65):
+                    labels.append('[41, 65] YEARS')
+                    values.append('1')
+                for line in range(0, _sup_65):
+                    labels.append('> 65  YEARS')
+                    values.append('1')
+
     piedata = go.Pie(
             labels = labels,
             values = values,
