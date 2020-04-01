@@ -32,7 +32,6 @@ app.title = 'COVID-19 Morocco'
 colors = {
     'background': '#FFFFFF',
     'text': '#7FDBFF',
-    #'background-body': '#ffe6e6'
     'background-body':'#b3ccff'
 }
 
@@ -69,15 +68,14 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
         #=========================== HEADER ======================
         dbc.Row(
             [
-                dbc.Col(html.Div(
-                    html.Img(src='./assets/images/um6p-logo.png', style={'height':'50%', 'width':'50%', 'align':'center'})
-                ,className="ml-2"), className="col-md-4 col-sm-12 ml-10"),
-                dbc.Col(html.Div(
-                    html.H4("Covid-19 Morocco", style={'color':'#22549F', 'align':'center'})
-                ), className="col-md-4  col-sm-12"),
-                dbc.Col(html.Div(children=[
+                html.Div(html.Div(
+                    html.Img(src='./assets/images/um6p-logo.png', style={'height':'50%', 'width':'50%'})), className="col-md-4  text-center"),
+                html.Div(html.Div(
+                    html.H4("Covid-19 Morocco", style={'color':'#22549F'})
+                ), className="col-md-4 text-center"),
+                html.Div(html.Div(children=[
                     html.P(children=["Mohammed VI Polytechnic university", html.Br(),"Modeling, Simulation and Data Analysis"], style={'color':'#22549F', 'align':'center'}),
-                ]), className="col-md-4  col-sm-12 text-center"),  
+                ]), className="col-md-4 text-center"),  
             ], justify="center", align="center", className="h-50", style={'backgroundColor': colors['background']}
         ),
         #=========================== BODY ======================
