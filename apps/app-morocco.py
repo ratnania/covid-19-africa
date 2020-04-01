@@ -35,6 +35,20 @@ colors = {
     #'background-body': '#ffe6e6'
     'background-body':'#b3ccff'
 }
+
+layoutEmpty = go.Layout( xaxis=dict(showticklabels=False,
+                                   showgrid=False,
+                                   zeroline=False),
+                        yaxis=dict(scaleanchor="x",
+                                   scaleratio=1,
+                                   showticklabels=False,
+                                   showgrid=False,
+                                   showline=False,
+                                   zeroline=False),
+                        showlegend=False,
+                        paper_bgcolor='rgba(0,0,0,0)',
+                        plot_bgcolor='rgba(0,0,0,0)'
+                      )
 # ...
 
 # ...
@@ -78,6 +92,13 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
                     html.Div(children=[
                     html.Div(children=[
                         html.Div([
+                            html.Hr(),
+                            html.H6(' Search ', style={'color':'#22549F'}),
+                            html.Hr(),
+                            html.P('please choose search criteria below to display the graphs'),
+                            html.Hr()
+                        ]),
+                        html.Div([
                             html.Label('Province'),
                             dcc.Dropdown(id="province",
                                 options=[{'label':name, 'value':name}
@@ -85,6 +106,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
                                 value=[],
                                 multi=True),
                         ]),
+                        html.Hr(),
                         html.Label('Period'),
                         html.Div([
                             dcc.DatePickerRange(id='date-picker-range',
@@ -92,6 +114,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
                                         end_date=datetime.date.today()),
     #                                    end_date_placeholder_text='Select a date!',
                         ]),
+                        html.Hr(),
                         html.Label('Other criteria'),
                         html.Div([
                            dbc.Checklist(id="criteria",
@@ -101,7 +124,11 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
                                 ],
                                 value=['age', 'gender'],
                                 inline=True)
-                        ])
+                        ]),
+                        html.Hr(),
+                        html.Div([
+                            html.P(['Last update: ', html.B(id="updatedAt", className='text-danger')])
+                        ]),
                     ])
                 ]), className="col-md-4 text-center mt-5 border rounded border-primary")  
             ], className="ml-2 mr-2"  
@@ -130,7 +157,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
          dbc.Row(
             [
                 dbc.Col(html.Div(
-                    html.P(['Last update: ', html.Label(id="updatedAt"), ' ',html.A('MSDA', href='https://msda.um6p.ma', target='_blank'), ' © 2020.'], style={'color':'#22549F', 'align':'center'})
+                    html.P(['Copyright ',html.A('MSDA', href='https://msda.um6p.ma', target='_blank'), ' © 2020. All rights reserved.'], style={'color':'#22549F', 'align':'center'})
                 ), className="col-md-12 text-center"),
             ], style={'backgroundColor': colors['background']}
         )
@@ -254,7 +281,7 @@ def update_graph(provinces, start_date, end_date):
     # ...
 
     if len(provinces) == 0:
-        return {'data': traces, 'layout': layout}
+        return {'data': traces, 'layout': layoutEmpty}
 
     # ...
     # TODO we should use dash storage
@@ -341,9 +368,9 @@ def update_pieChartGender(provinces, start_date, end_date, criteria):
     }
     
     if len(provinces) == 0:
-        return {'data': piedata}
+        return {'data': piedata, 'layout': layoutEmpty}
     if 'gender' not in criteria:
-        return {'data': piedata}
+        return {'data': piedata, 'layout': layoutEmpty}
 
     # ...
     date_key = 'confirmed_date'
@@ -412,16 +439,12 @@ def update_pieChartAge(provinces, start_date, end_date, criteria):
             "orientation": "v"
         },
     }
-    # ...
-   
-    # ...
-
+    
     if len(provinces) == 0:
-        return {'data': piedata}
+        return {'data': piedata, 'layout': layoutEmpty}
     if 'age' not in criteria:
-        return {'data': piedata}
-    # ...
-    # TODO we should use dash storage
+        return {'data': piedata, 'layout': layoutEmpty}
+    
     date_key = 'confirmed_date'
 
     df = select_by_date(namespace['patients'], date_key, start_date, end_date)
