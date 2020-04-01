@@ -100,7 +100,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
                             html.Hr(),
                             html.H6(' Search ', style={'color':'#22549F'}),
                             html.Hr(),
-                            html.P('please choose search criteria below to display the graphs'),
+                            html.P('Please choose search criteria below to display the graphs'),
                             html.Hr()
                         ]),
                         html.Div([
