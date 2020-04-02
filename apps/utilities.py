@@ -227,7 +227,7 @@ def select_by_date(df, date_key, start_date, end_date):
 
     mask = True
     if start_date is not None:
-        mask = mask & (df[date_key] > start_date)
+        mask = mask & (df[date_key] >= start_date)
 
     if end_date is not None:
         mask = mask & (df[date_key] <= end_date)
