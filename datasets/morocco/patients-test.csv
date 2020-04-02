@@ -1,643 +1,692 @@
 ﻿n,sex,age,country,province,disease,group,exposure_start,exposure_end,infection_reason,infection_order,infected_by,contact_number,confirmed_date,released_date,deceased_date,state
-0,male,39,Maroc,Casablanca - Settat,,,,,visit to Italy,,,,03/02/20,03/17/20,,Exit
-1,female,89,Maroc,Casablanca - Settat,1,,,,visit to Italy,,,,03/05/2020,,03/10/2020,Deceased
-2,male,59,France,Marrakech - Safi,,,07/03/20,,visit to France,,,,03/10/20,03/29/20,,Exit
-3,female,,France,Marrakech - Safi,,,07/03/20,,contact with patient,1,,,03/11/20,03/29/20,,Exit
-4,female,9 mois,France,Marrakech - Safi,,,07/03/20,,contact with patient,1,,,03/11/20,03/29/20,,Exit
-5,female,64,France,Fes - Meknes,,,05/03/20,,visit to France,,,,13/03/20,21/03/20,,Exit
-6,male,,,Casablanca - Settat,,,,,visit to Spain,,,,03/13/20,,,isolated
-7,male,75,Maroc,Rabat - Sale - Kenitra,1,,,,visit to France,,,,14/03/20,,17/03/20,Deceased
-8,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,visit to Spain,,,,14/03/20,,,isolated
-9,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,visit to Spain,,,,14/03/20,,,isolated
-10,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,visit to Spain,,,,14/03/20,,,isolated
-11,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,visit to Spain,,,,14/03/20,,,isolated
-12,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,visit to Italy,,,,14/03/20,,,isolated
-13,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,visit to Italy,,,,14/03/20,,,isolated
-14,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,visit to Italy,,,,14/03/20,,,isolated
-15,,,,Tanger - Tetouan - Al Houceima,,,02/24 to 03/12,,visit to France,,,,14/03/20,,,isolated
-16,female,80,Maroc,Beni Mellal - Khenifra,,,,,contact with patient,1,,,14/03/20,25/03/20,,Exit
-17,male,,,Casablanca - Settat,,,,,visit to Europe,,,,03/15/20,,,isolated
-18,,,,Casablanca - Settat,,,,,visit to Italy,,,,03/15/20,,,isolated
-19,,,,Casablanca - Settat,,,,,visit to Italy,,,,03/15/20,,,isolated
-20,,,,Casablanca - Settat,,,,,visit to France,,,,03/15/20,,,isolated
-21,,,,Rabat - Sale - Kenitra,,,,,visit to France,,,,15/03/20,,,isolated
-22,,,,Rabat - Sale - Kenitra,,,,,visit to Spain,,,,15/03/20,,,isolated
-23,,,,Rabat - Sale - Kenitra,,,,,visit to Spain,,,,15/03/20,,,isolated
-24,,,,Fes - Meknes,,,,,visit to Spain,,,,15/03/20,,,isolated
-25,,,,Fes - Meknes,,,,,visit to Spain,,,,15/03/20,,,isolated
-26,,,,Souss - Massa,,,,,visit to Spain,,,,15/03/20,,,isolated
-27,,,,Beni Mellal - Khenifra,1,,,,visit to Spain,,,,15/03/20,,22/03/20,Deceased
-28,,,,Casablanca - Settat,,,,,visit to Austria,,,,03/15/20,,,isolated
-29,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,16/03/20,,,isolated
-30,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,16/03/20,,,isolated
-31,,,,Marrakech - Safi,,,,,contact with patient,,,,16/03/20,,,isolated
-32,,,,Marrakech - Safi,,,,,contact with patient,,,,16/03/20,,,isolated
-33,female,,,Fes - Meknes,,,,,contact with patient,,,,16/03/20,,,isolated
-34,,,,Fes - Meknes,,,,,contact with patient,,,,16/03/20,,,isolated
-35,,,,Fes - Meknes,,,,,contact with patient,,,,16/03/20,,,isolated
-36,,,,Souss - Massa,,,,,contact with patient,,,,16/03/20,,,isolated
-37,,,,Casablanca - Settat,,,,,contact with patient,,,,16/03/20,,,isolated
-38,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,17/03/20,,,isolated
-39,,,,Fes - Meknes,,,,,contact with patient,,,,17/03/20,,,isolated
-40,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,17/03/20,,,isolated
-41,,,,Oriental,,,,,contact with patient,,,,17/03/20,,,isolated
-42,,,,Guelmim - Oued Noun,,,,,contact with patient,,,,17/03/20,,,isolated
-43,,,,Casablanca - Settat,,,,,contact with patient,,,,03/17/20,,,isolated
-44,,,,Casablanca - Settat,,,,,contact with patient,,,,03/17/20,,,isolated
-45,,,,Casablanca - Settat,,,,,contact with patient,,,,03/17/20,,,isolated
-46,female,45,,Fes - Meknes,,,,,contact with patient,,,,18/03/20,,,isolated
-47,female,,,Fes - Meknes,,,,,contact with patient,,,,18/03/20,,,Deceased
-48,,,,Fes - Meknes,,,,,contact with patient,,,,18/03/20,,,isolated
-49,,,,Fes - Meknes,,,,,contact with patient,,,,18/03/20,,,isolated
-50,female,,,Fes - Meknes,,,,,contact with patient,,,,19/03/20,,,isolated
-51,,,,Souss - Massa,,,,,contact with patient,,,,18/03/20,,,isolated
-52,,,,Souss - Massa,,,,,contact with patient,,,,18/03/20,,,isolated
-53,,,,Oriental,,,,,contact with patient,,,,18/03/20,,,isolated
-54,male,39,Maroc,Casablanca - Settat,1,,,,contact with patient,,,,03/18/20,,20/03/20,Deceased
-55,female,,Maroc,Casablanca - Settat,,,,,contact with patient,1,,,03/19/20,,,isolated
-56,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,19/03/20,,,isolated
-57,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,19/03/20,,,isolated
-58,,,,Marrakech - Safi,,,,,contact with patient,,,,19/03/20,,,isolated
-59,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,19/03/20,,,isolated
-60,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,19/03/20,,,isolated
-61,,,,Souss - Massa,,,,,contact with patient,,,,19/03/20,,,isolated
-62,,,,Souss - Massa,,,,,contact with patient,,,,19/03/20,,,isolated
-63,,,,Casablanca - Settat,,,,,contact with patient,,,,03/19/20,,,isolated
-64,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,20/03/20,,,isolated
-65,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,20/03/20,,,isolated
-66,,,,Marrakech - Safi,,,,,contact with patient,,,,20/03/20,,,isolated
-67,male,65,,Fes - Meknes,,,,,contact with patient,,,,20/03/20,,,Deceased
-68,female,67,,Fes - Meknes,,,,,contact with patient,,,,20/03/20,,,isolated
-69,male,65,,Fes - Meknes,,,,,contact with patient,,,,20/03/20,,,isolated
-70,female,66,,Fes - Meknes,,,,,contact with patient,,,,20/03/20,,,isolated
-71,male,75,,Fes - Meknes,,,,,contact with patient,,,,20/03/20,,,isolated
-72,male,35,,Fes - Meknes,,,,,contact with patient,,,,20/03/20,,,isolated
-73,,,,Fes - Meknes,,,,,contact with patient,,,,20/03/20,,,isolated
-74,,,,Tanger - Tetouan - Al Houceima,,,,,imported,,,,20/03/20,,,isolated
-75,,,,Oriental,,,,,contact with patient,,,,20/03/20,,,isolated
-76,,,,Oriental,,,,,contact with patient,,,,20/03/20,,,isolated
-77,,,,Casablanca - Settat,,,,,contact with patient,,,,20/03/20,,,isolated
-78,,,,Casablanca - Settat,,,,,contact with patient,,,,20/03/20,,,isolated
-79,,,,Casablanca - Settat,,,,,contact with patient,,,,20/03/20,,,isolated
-80,,,,Casablanca - Settat,,,,,contact with patient,,,,20/03/20,,,isolated
-81,,,,Casablanca - Settat,,,,,contact with patient,,,,20/03/20,,,isolated
-82,,,,Casablanca - Settat,,,,,contact with patient,,,,20/03/20,,,isolated
-83,,,,Casablanca - Settat,,,,,contact with patient,,,,20/03/20,,,isolated
-84,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,20/03/20,,,isolated
-85,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,20/03/20,,,isolated
-86,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,20/03/20,,,isolated
-87,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,21/03/20,,,isolated
-88,,,,Marrakech - Safi,,,,,contact with patient,,,,21/03/20,,,isolated
-89,,,,Marrakech - Safi,,,,,contact with patient,,,,21/03/20,,,isolated
-90,,,,Marrakech - Safi,,,,,contact with patient,,,,21/03/20,,,isolated
-91,,,,Fes - Meknes,,,,,contact with patient,,,,21/03/20,,,isolated
-92,male,,,Fes - Meknes,,,,,contact with patient,,,,22/03/20,,,isolated
-93,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,21/03/20,,,isolated
-94,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,21/03/20,,,isolated
-95,,,,Daraa - Tafilalet,,,,,contact with patient,,,,21/03/20,,,isolated
-96,,,,Casablanca - Settat,,,,,contact with patient,,,,22/03/20,,,isolated
-97,,,,Casablanca - Settat,,,,,,,,,22/03/20,,,isolated
-98,,,,Casablanca - Settat,,,,,,,,,22/03/20,,,isolated
-99,,,,Casablanca - Settat,,,,,,,,,22/03/20,,,isolated
-100,,,,Rabat - Sale - Kenitra,,,,,,,,,22/03/20,,,isolated
-101,,,,Rabat - Sale - Kenitra,,,,,,,,,22/03/20,,,isolated
-102,,,,Rabat - Sale - Kenitra,,,,,,,,,22/03/20,,,isolated
-103,,,,Rabat - Sale - Kenitra,,,,,,,,,22/03/20,,,isolated
-104,,,,Rabat - Sale - Kenitra,,,,,,,,,22/03/20,,,isolated
-105,,,,Rabat - Sale - Kenitra,,,,,,,,,22/03/20,,,isolated
-106,,,,Rabat - Sale - Kenitra,,,,,,,,,22/03/20,,,isolated
-107,,,,Marrakech - Safi,,,,,,,,,22/03/20,,,isolated
-108,,,,Marrakech - Safi,,,,,,,,,22/03/20,,,isolated
-109,,,,Marrakech - Safi,,,,,,,,,22/03/20,,,isolated
-110,female,,,Fes - Meknes,,,,,,,,,22/03/20,,,isolated
-111,male,,,Fes - Meknes,,,,,,,,,22/03/20,,,isolated
-112,female,,,Fes - Meknes,,,,,,,,,22/03/20,,,isolated
-113,,,,Beni Mellal - Khenifra,,,,,,,,,22/03/20,,,isolated
-114,,,,Oriental,,,,,,,,,22/03/20,,,isolated
-115,,,,Casablanca - Settat,,,,,,,,,23/03/20,,,isolated
-116,,,,Casablanca - Settat,,,,,,,,,23/03/20,,,isolated
-117,,,,Casablanca - Settat,,,,,,,,,23/03/20,,,isolated
-118,,,,Casablanca - Settat,,,,,,,,,23/03/20,,,isolated
-119,,,,Casablanca - Settat,,,,,,,,,23/03/20,,,isolated
-120,,,,Casablanca - Settat,,,,,,,,,23/03/20,,,isolated
-121,,,,Casablanca - Settat,,,,,,,,,23/03/20,,,isolated
-122,,,,Casablanca - Settat,,,,,,,,,23/03/20,,,isolated
-123,,,,Rabat - Sale - Kenitra,,,,,,,,,23/03/20,,,isolated
-124,,,,Rabat - Sale - Kenitra,,,,,,,,,23/03/20,,,isolated
-125,,,,Rabat - Sale - Kenitra,,,,,,,,,23/03/20,,,isolated
-126,male,,,Marrakech - Safi,1,,,,,,,,23/03/20,,28/03/20,Deceased
-127,,,,Marrakech - Safi,,,,,,,,,23/03/20,,,isolated
-128,female,,,Fes - Meknes,1,,,,contact with patient,,,,23/03/20,,26/03/20,Deceased
-129,female,,,Fes - Meknes,1,,,,contact with patient,,,,23/03/20,,26/03/20,Deceased
-130,male,,,Fes - Meknes,,,,,,,,,23/03/20,,,isolated
-131,male,75,,Fes - Meknes,,,,,,,,,23/03/20,,,isolated
-132,female,,,Fes - Meknes,,,,,,,,,23/03/20,,,isolated
-133,female,,,Fes - Meknes,,,,,,,,,23/03/20,,,isolated
-134,female,,,Fes - Meknes,,,,,,,,,23/03/20,,,isolated
-135,,,,Fes - Meknes,,,,,,,,,23/03/20,,,isolated
-136,,,,Fes - Meknes,,,,,,,,,23/03/20,,,isolated
-137,female,,,Fes - Meknes,,,,,,,,,24/03/20,,,isolated
-138,male,69,,Fes - Meknes,,,,,,,,,25/03/20,,,isolated
-139,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,23/03/20,,,isolated
-140,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,23/03/20,,,isolated
-141,,,,Oriental,,,,,,,,,23/03/20,,,isolated
-142,,,,Oriental,,,,,,,,,23/03/20,,,isolated
-143,,,,Casablanca - Settat,,,,,,,,,24/03/20,,,isolated
-144,,,,Casablanca - Settat,,,,,,,,,24/03/20,,,isolated
-145,,,,Casablanca - Settat,,,,,,,,,24/03/20,,,isolated
-146,,,,Casablanca - Settat,,,,,,,,,24/03/20,,,isolated
-147,,,,Casablanca - Settat,,,,,,,,,24/03/20,,,isolated
-148,,,,Casablanca - Settat,,,,,,,,,24/03/20,,,isolated
-149,,,,Casablanca - Settat,,,,,,,,,24/03/20,,,isolated
-150,,,,Casablanca - Settat,,,,,,,,,24/03/20,,,isolated
-151,,,,Rabat - Sale - Kenitra,,,,,,,,,24/03/20,,,isolated
-152,,,,Rabat - Sale - Kenitra,,,,,,,,,24/03/20,,,isolated
-153,,,,Rabat - Sale - Kenitra,,,,,,,,,24/03/20,,,isolated
-154,,,,Rabat - Sale - Kenitra,,,,,,,,,24/03/20,,,isolated
-155,,,,Rabat - Sale - Kenitra,,,,,,,,,24/03/20,,,isolated
-156,,,,Rabat - Sale - Kenitra,,,,,,,,,24/03/20,,,isolated
-157,,,,Rabat - Sale - Kenitra,,,,,,,,,24/03/20,,,isolated
-158,,,,Rabat - Sale - Kenitra,,,,,,,,,24/03/20,,,isolated
-159,,,,Marrakech - Safi,,,,,,,,,24/03/20,,,isolated
-160,,,,Marrakech - Safi,,,,,,,,,24/03/20,,,isolated
-161,,,,Marrakech - Safi,,,,,,,,,24/03/20,,,isolated
-162,,,,Marrakech - Safi,,,,,,,,,24/03/20,,,isolated
-163,,,,Marrakech - Safi,,,,,,,,,24/03/20,,,isolated
-164,,,,Marrakech - Safi,,,,,,,,,24/03/20,,,isolated
-165,,,,Marrakech - Safi,,,,,,,,,24/03/20,,,isolated
-166,female,68,,Fes - Meknes,,,,,,,,,25/03/20,,,isolated
-167,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,24/03/20,,,isolated
-168,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,24/03/20,,,isolated
-169,,,,Beni Mellal - Khenifra,,,,,,,,,24/03/20,,,isolated
-170,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-171,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-172,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-173,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-174,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-175,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-176,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-177,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-178,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-179,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-180,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-181,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-182,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-183,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-184,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-185,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-186,,,,Casablanca - Settat,,,,,,,,,25/03/20,,,isolated
-187,,,,Rabat - Sale - Kenitra,,,,,,,,,25/03/20,,,isolated
-188,,,,Rabat - Sale - Kenitra,,,,,,,,,25/03/20,,,isolated
-189,,,,Rabat - Sale - Kenitra,,,,,,,,,25/03/20,,,isolated
-190,,,,Rabat - Sale - Kenitra,,,,,,,,,25/03/20,,,isolated
-191,,,,Rabat - Sale - Kenitra,,,,,,,,,25/03/20,,,isolated
-192,male,35,,Marrakech - Safi,1,,,,,,,,25/03/20,,27/03/20,Deceased
-193,male,,,Marrakech - Safi,1,,,,,,,,25/03/20,,27/03/20,Deceased
-194,male,,,Marrakech - Safi,1,,,,,,,,25/03/20,,27/03/20,Deceased
-195,,,,Marrakech - Safi,,,,,,,,,25/03/20,,,isolated
-196,,,,Marrakech - Safi,,,,,,,,,25/03/20,,,isolated
-197,,,,Marrakech - Safi,,,,,,,,,25/03/20,,,isolated
-198,,,,Marrakech - Safi,,,,,,,,,25/03/20,,,isolated
-199,,,,Marrakech - Safi,,,,,,,,,25/03/20,,,isolated
-200,,,,Marrakech - Safi,,,,,,,,,25/03/20,,,isolated
-201,,,,Marrakech - Safi,,,,,,,,,25/03/20,,,isolated
-202,female,75,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-203,female,64,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-204,male,62,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-205,female,56,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-206,male,75,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-207,female,67,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-208,female,72,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-209,male,72,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-210,female,56,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-211,male,65,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-212,female,67,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-213,female,51,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-214,male,75,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-215,female,71,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-216,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,25/03/20,,,isolated
-217,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,25/03/20,,,isolated
-218,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,25/03/20,,,isolated
-219,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,25/03/20,,,isolated
-220,,,,Souss - Massa,,,,,,,,,25/03/20,,,isolated
-221,,,,Souss - Massa,,,,,,,,,25/03/20,,,isolated
-222,,,,Beni Mellal - Khenifra,,,,,,,,,25/03/20,,,isolated
-223,,,,Beni Mellal - Khenifra,,,,,,,,,25/03/20,,,isolated
-224,male,40,,Daraa - Tafilalet,,,,,contact with patient,,,,25/03/20,,,isolated
-225,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-226,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-227,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-228,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-229,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-230,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-231,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-232,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-233,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-234,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-235,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-236,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-237,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-238,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-239,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-240,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-241,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-242,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-243,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-244,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-245,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-246,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-247,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-248,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-249,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-250,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-251,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-252,,,,Casablanca - Settat,,,,,,,,,03/26/2020,,,isolated
-253,,,,Rabat - Sale - Kenitra,,,,,,,,,03/26/2020,,,isolated
-254,,,,Rabat - Sale - Kenitra,,,,,,,,,03/26/2020,,,isolated
-255,,,,Rabat - Sale - Kenitra,,,,,,,,,03/26/2020,,,isolated
-256,,,,Rabat - Sale - Kenitra,,,,,,,,,03/26/2020,,,isolated
-257,,,,Rabat - Sale - Kenitra,,,,,,,,,03/26/2020,,,isolated
-258,,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-259,,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-260,,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-261,,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-262,,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-263,,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-264,,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-265,,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-266,,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-267,,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-268,male,,,Marrakech - Safi,,,,,,,,,03/26/2020,,,isolated
-269,female,65,,Fes - Meknes,,,,03/10/2020,visit to Egypt,,,,25/03/20,,,isolated
-270,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,03/26/2020,,,isolated
-271,,,,Souss - Massa,,,,,,,,,03/26/2020,,,isolated
-272,,,,Souss - Massa,,,,,,,,,03/26/2020,,,isolated
-273,,,,Beni Mellal - Khenifra,,,,,,,,,03/26/2020,,,isolated
-274,male,57,,Daraa - Tafilalet,,,,,visit to France,,,,03/26/2020,,,isolated
-275,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-276,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-277,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-278,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-279,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-280,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-281,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-282,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-283,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-284,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-285,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-286,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-287,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-288,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-289,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-290,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-291,,,,Casablanca - Settat,,,,,contact with patient,,,,27/03/20,,,isolated
-292,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,27/03/20,,,isolated
-293,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,27/03/20,,,isolated
-294,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,27/03/20,,,isolated
-295,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,27/03/20,,,isolated
-296,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,27/03/20,,,isolated
-297,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,27/03/20,,,isolated
-298,,,,Marrakech - Safi,,,,,contact with patient,,,,27/03/20,,,isolated
-299,,,,Marrakech - Safi,,,,,contact with patient,,,,27/03/20,,,isolated
-300,,,,Marrakech - Safi,,,,,contact with patient,,,,27/03/20,,,isolated
-301,,,,Marrakech - Safi,,,,,contact with patient,,,,27/03/20,,,isolated
-302,,,,Marrakech - Safi,,,,,contact with patient,,,,27/03/20,,,isolated
-303,,,,Marrakech - Safi,,,,,contact with patient,,,,27/03/20,,,isolated
-304,,,,Marrakech - Safi,,,,,contact with patient,,,,27/03/20,,,isolated
-305,,,,Marrakech - Safi,,,,,contact with patient,,,,27/03/20,,,isolated
-306,female,,,Fes - Meknes,,,,,contact with patient,,,,26/03/20,,,isolated
-307,male,,,Fes - Meknes,,,,,contact with patient,,,,26/03/20,,,isolated
-308,male,,,Fes - Meknes,,,,,contact with patient,,,,26/03/20,,,isolated
-309,,,,Fes - Meknes,,,,,contact with patient,,,,27/03/20,,,isolated
-310,,,,Fes - Meknes,,,,,contact with patient,,,,27/03/20,,,isolated
-311,,,,Fes - Meknes,,,,,contact with patient,,,,27/03/20,,,isolated
-312,,,,Fes - Meknes,,,,,contact with patient,,,,27/03/20,,,isolated
-313,,,,Fes - Meknes,,,,,contact with patient,,,,27/03/20,,,isolated
-314,,,,Fes - Meknes,,,,,contact with patient,,,,27/03/20,,,isolated
-315,,,,Fes - Meknes,,,,,contact with patient,,,,27/03/20,,,isolated
-316,,,,Fes - Meknes,,,,,contact with patient,,,,27/03/20,,,isolated
-317,,,,Fes - Meknes,,,,,contact with patient,,,,27/03/20,,,isolated
-318,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,27/03/20,,,isolated
-319,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,27/03/20,,,isolated
-320,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,27/03/20,,,isolated
-321,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,27/03/20,,,isolated
-322,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,27/03/20,,,isolated
-323,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,27/03/20,,,isolated
-324,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,27/03/20,,,isolated
-325,,,,Souss - Massa,,,,,contact with patient,,,,27/03/20,,,isolated
-326,,,,Oriental,,,,,contact with patient,,,,27/03/20,,,isolated
-327,,,,Oriental,,,,,contact with patient,,,,27/03/20,,,isolated
-328,,,,Oriental,,,,,contact with patient,,,,27/03/20,,,isolated
-329,,,,Oriental,,,,,contact with patient,,,,27/03/20,,,isolated
-330,,,,Oriental,,,,,contact with patient,,,,27/03/20,,,isolated
-331,,,,Daraa - Tafilalet,,,,,contact with patient,,,,27/03/20,,,isolated
-332,,,,Daraa - Tafilalet,,,,,contact with patient,,,,27/03/20,,,isolated
-333,,,,Casablanca - Settat,,,,,contact with patient,,,,28/03/20,,,isolated
-334,,,,Casablanca - Settat,,,,,contact with patient,,,,28/03/20,,,isolated
-335,,,,Casablanca - Settat,,,,,contact with patient,,,,28/03/20,,,isolated
-336,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,28/03/20,,,isolated
-337,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,28/03/20,,,isolated
-338,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,28/03/20,,,isolated
-339,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,28/03/20,,,isolated
-340,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,28/03/20,,,isolated
-341,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,28/03/20,,,isolated
-342,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,28/03/20,,,isolated
-343,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,28/03/20,,,isolated
-344,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-345,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-346,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-347,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-348,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-349,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-350,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-351,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-352,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-353,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-354,,,,Marrakech - Safi,,,,,contact with patient,,,,28/03/20,,,isolated
-355,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,28/03/20,,,isolated
-356,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,28/03/20,,,isolated
-357,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,28/03/20,,,isolated
-358,,,,Oriental,,,,,contact with patient,,,,28/03/20,,,isolated
-359,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-360,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-361,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-362,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-363,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-364,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-365,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-366,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-367,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-368,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-369,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-370,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-371,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-372,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-373,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-374,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-375,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-376,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-377,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-378,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-379,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-380,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-381,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-382,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-383,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-384,,,,Casablanca - Settat,,,,,,,,,29/03/20,,,isolated
-385,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-386,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-387,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-388,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-389,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-390,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-391,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-392,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-393,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-394,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-395,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-396,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-397,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-398,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-399,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-400,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-401,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-402,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-403,,,,Rabat - Sale - Kenitra,,,,,,,,,29/03/20,,,isolated
-404,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-405,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-406,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-407,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-408,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-409,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-410,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-411,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-412,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-413,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-414,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-415,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-416,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-417,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-418,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-419,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-420,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-421,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-422,,,,Marrakech - Safi,,,,,,,,,29/03/20,,,isolated
-423,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-424,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-425,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-426,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-427,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-328,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-429,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-430,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-431,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-432,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-433,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-434,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-435,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-436,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-437,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-438,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-439,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-440,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-441,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-442,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-443,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-444,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-445,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-446,,,,Fes - Meknes,,,,,,,,,29/03/20,,,isolated
-447,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,29/03/20,,,isolated
-448,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,29/03/20,,,isolated
-449,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,29/03/20,,,isolated
-450,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,29/03/20,,,isolated
-451,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,29/03/20,,,isolated
-452,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,29/03/20,,,isolated
-453,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,29/03/20,,,isolated
-454,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,29/03/20,,,isolated
-455,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,29/03/20,,,isolated
-456,,,,Souss - Massa,,,,,,,,,29/03/20,,,isolated
-457,,,,Souss - Massa,,,,,,,,,29/03/20,,,isolated
-458,,,,Souss - Massa,,,,,,,,,29/03/20,,,isolated
-459,,,,Oriental,,,,,,,,,29/03/20,,,isolated
-460,,,,Oriental,,,,,,,,,29/03/20,,,isolated
-461,,,,Oriental,,,,,,,,,29/03/20,,,isolated
-462,,,,Daraa - Tafilalet,,,,,contact with patient,,,,29/03/20,,,isolated
-463,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-464,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-465,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-466,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-467,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-468,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-469,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-470,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-471,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-472,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-473,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-474,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-475,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-476,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-477,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-478,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-479,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-480,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-481,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-482,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-483,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-484,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-485,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-486,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-487,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-488,,,,Casablanca - Settat,,,,,contact with patient,,,,30/03/20,,,isolated
-489,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,30/03/20,,,isolated
-490,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,30/03/20,,,isolated
-491,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,30/03/20,,,isolated
-492,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,30/03/20,,,isolated
-493,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,30/03/20,,,isolated
-494,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-495,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-496,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-497,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-498,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-499,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-500,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-501,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-502,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-503,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-504,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-505,,,,Marrakech - Safi,,,,,contact with patient,,,,30/03/20,,,isolated
-506,,,,Fes - Meknes,,,,,contact with patient,,,,30/03/20,,,isolated
-507,,,,Fes - Meknes,,,,,contact with patient,,,,30/03/20,,,isolated
-508,,,,Fes - Meknes,,,,,contact with patient,,,,30/03/20,,,isolated
-509,,,,Fes - Meknes,,,,,contact with patient,,,,30/03/20,,,isolated
-510,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,30/03/20,,,isolated
-511,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,30/03/20,,,isolated
-512,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,30/03/20,,,isolated
-513,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,30/03/20,,,isolated
-514,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,30/03/20,,,isolated
-515,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,30/03/20,,,isolated
-516,,,,Souss - Massa,,,,,contact with patient,,,,30/03/20,,,isolated
-517,,,,Souss - Massa,,,,,contact with patient,,,,30/03/20,,,isolated
-518,,,,Souss - Massa,,,,,contact with patient,,,,30/03/20,,,isolated
-519,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,30/03/20,,,isolated
-520,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,30/03/20,,,isolated
-521,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,30/03/20,,,isolated
-522,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,30/03/20,,,isolated
-523,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,30/03/20,,,isolated
-524,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,30/03/20,,,isolated
-525,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,30/03/20,,,isolated
-526,,,,Oriental,,,,,contact with patient,,,,30/03/20,,,isolated
-527,,,,Oriental,,,,,contact with patient,,,,30/03/20,,,isolated
-528,,,,Oriental,,,,,contact with patient,,,,30/03/20,,,isolated
-529,,,,Oriental,,,,,contact with patient,,,,30/03/20,,,isolated
-530,,,,Oriental,,,,,contact with patient,,,,30/03/20,,,isolated
-531,,,,Oriental,,,,,contact with patient,,,,30/03/20,,,isolated
-532,,,,Daraa - Tafilalet,,,,,contact with patient,,,,30/03/20,,,isolated
-533,,,,Daraa - Tafilalet,,,,,contact with patient,,,,30/03/20,,,isolated
-534,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-535,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-536,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-537,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-538,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-539,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-540,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-541,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-542,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-543,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-544,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-545,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-546,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-547,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-548,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-549,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-550,,,,Casablanca - Settat,,,,,contact with patient,,,,31/03/20,,,isolated
-551,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-552,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-553,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-554,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-555,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-556,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-557,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-558,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-559,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-560,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-561,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-562,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-563,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-564,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-565,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-566,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-567,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,31/03/20,,,isolated
-568,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-569,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-570,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-571,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-572,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-573,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-574,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-575,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-576,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-577,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-578,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-579,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-580,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-581,,,,Marrakech - Safi,,,,,contact with patient,,,,31/03/20,,,isolated
-582,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-583,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-584,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-585,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-586,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-587,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-588,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-589,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-590,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-591,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-592,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-593,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-594,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-595,,,,Fes - Meknes,,,,,contact with patient,,,,31/03/20,,,isolated
-596,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,31/03/20,,,isolated
-597,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,31/03/20,,,isolated
-598,,,,Oriental,,,,,contact with patient,,,,31/03/20,,,isolated
-599,,,,Daraa - Tafilalet,,,,,contact with patient,,,,31/03/20,,,isolated
-600,,,,Daraa - Tafilalet,,,,,contact with patient,,,,31/03/20,,,isolated
-601,,,,Daraa - Tafilalet,,,,,contact with patient,,,,31/03/20,,,isolated
-602,,,,Casablanca - Settat,,,,,contact with patient,,,,04/01/20,,,isolated
-603,,,,Casablanca - Settat,,,,,contact with patient,,,,04/01/20,,,isolated
-604,,,,Casablanca - Settat,,,,,contact with patient,,,,04/01/20,,,isolated
-605,,,,Casablanca - Settat,,,,,contact with patient,,,,04/01/20,,,isolated
-606,,,,Casablanca - Settat,,,,,contact with patient,,,,04/01/20,,,isolated
-607,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,04/01/2020,,,isolated
-608,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,04/01/2020,,,isolated
-609,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,04/01/2020,,,isolated
-610,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,04/01/2020,,,isolated
-611,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,04/01/2020,,,isolated
-612,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,04/01/2020,,,isolated
-613,,,,Rabat - Sale - Kenitra,,,,,contact with patient,,,,04/01/2020,,,isolated
-614,,,,Marrakech - Safi,,,,,contact with patient,,,,04/01/2020,,,isolated
-615,,,,Marrakech - Safi,,,,,contact with patient,,,,04/01/2020,,,isolated
-616,,,,Marrakech - Safi,,,,,contact with patient,,,,04/01/2020,,,isolated
-617,,,,Marrakech - Safi,,,,,contact with patient,,,,04/01/2020,,,isolated
-618,,,,Marrakech - Safi,,,,,contact with patient,,,,04/01/2020,,,isolated
-619,,,,Marrakech - Safi,,,,,contact with patient,,,,04/01/2020,,,isolated
-620,,,,Marrakech - Safi,,,,,contact with patient,,,,04/01/2020,,,isolated
-621,,,,Marrakech - Safi,,,,,contact with patient,,,,04/01/2020,,,isolated
-622,,,,Fes - Meknes,,,,,contact with patient,,,,04/01/2020,,,isolated
-623,,,,Fes - Meknes,,,,,contact with patient,,,,04/01/2020,,,isolated
-624,,,,Fes - Meknes,,,,,contact with patient,,,,04/01/2020,,,isolated
-625,,,,Fes - Meknes,,,,,contact with patient,,,,04/01/2020,,,isolated
-626,,,,Fes - Meknes,,,,,contact with patient,,,,04/01/2020,,,isolated
-627,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,04/01/2020,,,isolated
-628,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,04/01/2020,,,isolated
-629,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,04/01/2020,,,isolated
-630,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,04/01/2020,,,isolated
-631,,,,Tanger - Tetouan - Al Houceima,,,,,contact with patient,,,,04/01/2020,,,isolated
-632,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,04/01/2020,,,isolated
-633,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,04/01/2020,,,isolated
-634,,,,Beni Mellal - Khenifra,,,,,contact with patient,,,,04/01/2020,,,isolated
-635,,,,Oriental,,,,,contact with patient,,,,04/01/2020,,,isolated
-636,,,,Oriental,,,,,contact with patient,,,,04/01/2020,,,isolated
-637,,,,Oriental,,,,,contact with patient,,,,04/01/2020,,,isolated
-638,,,,Daraa - Tafilalet,,,,,contact with patient,,,,04/01/20,,,isolated
-639,,,,Daraa - Tafilalet,,,,,contact with patient,,,,04/01/20,,,isolated
-640,male,58,,Laayoune - Saguia al hamra,,,,,contact with patient,,,,04/01/20,,,isolated
-641,female,38,,Laayoune - Saguia al hamra,,,,,contact with patient,,,,04/01/20,,,isolated
+0,male,39,Maroc,Casablanca - Settat,,,,,Imported,,,,3/2/20,03/17/20,,Exit
+1,female,89,Maroc,Casablanca - Settat,1,,,,Imported,,,,3/5/20,,3/10/20,Deceased
+2,male,59,France,Marrakech - Safi,,,3/7/20,,Imported,,,,3/10/20,3/29/20,,Exit
+3,female,,France,Marrakech - Safi,,,3/7/20,,Imported,,,,3/11/20,3/29/20,,Exit
+4,female,1,France,Marrakech - Safi,,,3/7/20,,Imported,,,,3/11/20,3/29/20,,Exit
+5,female,64,France,Fes - Meknes,,,3/5/20,,Imported,,,,3/13/20,3/21/20,,Exit
+6,male,,,Casablanca - Settat,,,,,Imported,,,,3/13/20,,,isolated
+7,male,75,Maroc,Rabat - Sale - Kenitra,1,,,,Imported,,,,3/14/20,,3/17/20,Deceased
+8,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,Imported,,,,3/14/20,,,isolated
+9,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,Imported,,,,3/14/20,,,isolated
+10,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,Imported,,,,3/14/20,,,isolated
+11,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,Imported,,,,3/14/20,,,isolated
+12,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,Imported,,,,3/14/20,,,isolated
+13,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,Imported,,,,3/14/20,,,isolated
+14,,,,Rabat - Sale - Kenitra,,,02/24 to 03/12,,Imported,,,,3/14/20,,,isolated
+15,,,,Tanger - Tetouan - Al Houceima,,,02/24 to 03/12,,Imported,,,,3/14/20,,,isolated
+16,female,80,Maroc,Beni Mellal - Khenifra,,,,,Imported,,,,3/14/20,3/25/20,,Exit
+17,male,,,Casablanca - Settat,,,,,Imported,,,,3/15/20,,,Exit
+18,,,,Casablanca - Settat,,,,,Imported,,,,3/15/20,,,isolated
+19,,,,Casablanca - Settat,,,,,Imported,,,,3/15/20,,,isolated
+20,,,,Casablanca - Settat,,,,,Imported,,,,3/15/20,,,isolated
+21,,,,Rabat - Sale - Kenitra,,,,,Imported,,,,3/15/20,,,isolated
+22,,,,Rabat - Sale - Kenitra,,,,,Imported,,,,3/15/20,,,isolated
+23,,,,Rabat - Sale - Kenitra,,,,,Imported,,,,3/15/20,,,isolated
+24,,,,Fes - Meknes,,,,,Imported,,,,3/15/20,,,isolated
+25,,,,Fes - Meknes,,,,,Imported,,,,3/15/20,,,isolated
+26,,,,Souss - Massa,,,,,Imported,,,,3/15/20,,,isolated
+27,,,,Beni Mellal - Khenifra,1,,,,Imported,,,,3/15/20,,3/22/20,Deceased
+28,,,,Casablanca - Settat,,,,,Imported,,,,3/15/20,,,isolated
+29,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/16/20,,,isolated
+30,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/16/20,,,isolated
+31,,,,Marrakech - Safi,,,,,Local,,,,3/16/20,,,isolated
+32,,,,Marrakech - Safi,,,,,Local,,,,3/16/20,,,isolated
+33,female,,,Fes - Meknes,,,,,Local,,,,3/16/20,,,isolated
+34,,,,Fes - Meknes,,,,,Local,,,,3/16/20,,,isolated
+35,,,,Fes - Meknes,,,,,Local,,,,3/16/20,,,isolated
+36,,,,Souss - Massa,,,,,Local,,,,3/16/20,,,isolated
+37,,,,Casablanca - Settat,,,,,Local,,,,3/16/20,,,isolated
+38,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/17/20,,,isolated
+39,,,,Fes - Meknes,,,,,Local,,,,3/17/20,,,isolated
+40,female,68,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/17/20,,4/2/20,Exit
+41,,,,Oriental,,,,,Local,,,,3/17/20,,,isolated
+42,,,,Guelmim - Oued Noun,,,,,Local,,,,3/17/20,,,isolated
+43,,,,Casablanca - Settat,,,,,Local,,,,3/17/20,,,isolated
+44,,,,Casablanca - Settat,,,,,Local,,,,3/17/20,,,isolated
+45,,,,Casablanca - Settat,,,,,Local,,,,3/18/20,,,isolated
+46,female,45,,Fes - Meknes,,,,,Local,,,,3/18/20,,,isolated
+47,female,,,Fes - Meknes,,,,,Local,,,,3/18/20,,,Deceased
+48,,,,Fes - Meknes,,,,,Local,,,,3/18/20,,,isolated
+49,,,,Fes - Meknes,,,,,Local,,,,3/18/20,,,isolated
+50,female,,,Fes - Meknes,,,,,Local,,,,3/19/20,,,isolated
+51,,,,Souss - Massa,,,,,Local,,,,3/18/20,,,isolated
+52,,,,Souss - Massa,,,,,Local,,,,3/18/20,,,isolated
+53,,,,Oriental,,,,,Local,,,,3/18/20,,,isolated
+54,male,39,Maroc,Casablanca - Settat,1,,,,Local,,,,3/18/20,,3/20/20,Deceased
+55,female,,Maroc,Casablanca - Settat,,,,,Local,1,,,3/19/20,,,isolated
+56,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/19/20,,,isolated
+57,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/19/20,,,isolated
+58,,,,Marrakech - Safi,,,,,Local,,,,3/19/20,,,isolated
+59,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/19/20,,,isolated
+60,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/19/20,,,isolated
+61,,,,Souss - Massa,,,,,Local,,,,3/19/20,,,isolated
+62,,,,Souss - Massa,,,,,Local,,,,3/19/20,,,isolated
+63,,,,Casablanca - Settat,,,,,Local,,,,3/19/20,,,isolated
+64,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/20/20,,,isolated
+65,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/20/20,,,isolated
+66,,,,Marrakech - Safi,,,,,Local,,,,3/20/20,,,isolated
+67,male,65,,Fes - Meknes,,,,,Local,,,,3/20/20,,,Deceased
+68,female,67,,Fes - Meknes,,,,,Local,,,,3/20/20,,,isolated
+69,male,65,,Fes - Meknes,,,,,Local,,,,3/20/20,,,isolated
+70,female,66,,Fes - Meknes,,,,,Local,,,,3/20/20,,,isolated
+71,male,75,,Fes - Meknes,,,,,Local,,,,3/20/20,,,isolated
+72,male,35,,Fes - Meknes,,,,,Local,,,,3/20/20,,,isolated
+73,,,,Fes - Meknes,,,,,Local,,,,3/20/20,,,isolated
+74,,,,Tanger - Tetouan - Al Houceima,,,,,imported,,,,3/20/20,,,isolated
+75,,,,Oriental,,,,,Local,,,,3/20/20,,,isolated
+76,,,,Oriental,,,,,Local,,,,3/20/20,,,isolated
+77,,,,Casablanca - Settat,,,,,Local,,,,3/20/20,,,isolated
+78,,,,Casablanca - Settat,,,,,Local,,,,3/20/20,,,isolated
+79,,,,Casablanca - Settat,,,,,Local,,,,3/20/20,,,isolated
+80,,,,Casablanca - Settat,,,,,Local,,,,3/20/20,,,isolated
+81,,,,Casablanca - Settat,,,,,Local,,,,3/20/20,,,isolated
+82,,,,Casablanca - Settat,,,,,Local,,,,3/20/20,,,isolated
+83,,,,Casablanca - Settat,,,,,Local,,,,3/20/20,,,isolated
+84,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/20/20,,,isolated
+85,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/20/20,,,isolated
+86,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/20/20,,,isolated
+87,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/21/20,,,isolated
+88,,,,Marrakech - Safi,,,,,Local,,,,3/21/20,,,isolated
+89,,,,Marrakech - Safi,,,,,Local,,,,3/21/20,,,isolated
+90,,,,Marrakech - Safi,,,,,Local,,,,3/21/20,,,isolated
+91,,,,Fes - Meknes,,,,,Local,,,,3/21/20,,,isolated
+92,male,,,Fes - Meknes,,,,,Local,,,,3/22/20,,,isolated
+93,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/21/20,,,isolated
+94,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/21/20,,,isolated
+95,,,,Daraa - Tafilalet,,,,,Local,,,,3/21/20,,,isolated
+96,,,,Casablanca - Settat,,,,,Local,,,,3/22/20,,,isolated
+97,,,,Casablanca - Settat,,,,,,,,,3/22/20,,,isolated
+98,,,,Casablanca - Settat,,,,,,,,,3/22/20,,,isolated
+99,,,,Casablanca - Settat,,,,,,,,,3/22/20,,,isolated
+100,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
+101,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
+102,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
+103,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
+104,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
+105,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
+106,,,,Rabat - Sale - Kenitra,,,,,,,,,3/22/20,,,isolated
+107,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
+108,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
+109,,,,Marrakech - Safi,,,,,,,,,3/22/20,,,isolated
+110,female,,,Fes - Meknes,,,,,,,,,3/22/20,,,isolated
+111,male,,,Fes - Meknes,,,,,,,,,3/22/20,,,isolated
+112,female,,,Fes - Meknes,,,,,,,,,3/22/20,,,isolated
+113,,,,Beni Mellal - Khenifra,,,,,,,,,3/22/20,,,isolated
+114,,,,Oriental,,,,,,,,,3/22/20,,,isolated
+115,,,,Casablanca - Settat,,,,,,,,,3/23/20,,,isolated
+116,,,,Casablanca - Settat,,,,,,,,,3/23/20,,,isolated
+117,,,,Casablanca - Settat,,,,,,,,,3/23/20,,,isolated
+118,,,,Casablanca - Settat,,,,,,,,,3/23/20,,,isolated
+119,,,,Casablanca - Settat,,,,,,,,,3/23/20,,,isolated
+120,,,,Casablanca - Settat,,,,,,,,,3/23/20,,,isolated
+121,,,,Casablanca - Settat,,,,,,,,,3/23/20,,,isolated
+122,,,,Casablanca - Settat,,,,,,,,,3/23/20,,,isolated
+123,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
+124,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
+125,,,,Rabat - Sale - Kenitra,,,,,,,,,3/23/20,,,isolated
+126,male,,,Marrakech - Safi,1,,,,,,,,3/23/20,,3/28/20,Deceased
+127,,,,Marrakech - Safi,,,,,,,,,3/23/20,,,isolated
+128,female,,,Fes - Meknes,1,,,,local,,,,3/23/20,,3/26/20,Deceased
+129,female,,,Fes - Meknes,1,,,,local,,,,3/23/20,,3/26/20,Deceased
+130,male,,,Fes - Meknes,,,,,,,,,3/23/20,,,isolated
+131,male,75,,Fes - Meknes,,,,,,,,,3/23/20,,,isolated
+132,female,,,Fes - Meknes,,,,,,,,,3/23/20,,,isolated
+133,female,,,Fes - Meknes,,,,,,,,,3/23/20,,,isolated
+134,female,,,Fes - Meknes,,,,,,,,,3/23/20,,,isolated
+135,,,,Fes - Meknes,,,,,,,,,3/23/20,,,isolated
+136,,,,Fes - Meknes,,,,,,,,,3/23/20,,,isolated
+137,female,,,Fes - Meknes,,,,,,,,,3/24/20,,,isolated
+138,male,69,,Fes - Meknes,,,,,,,,,3/25/20,,,isolated
+139,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/20,,,isolated
+140,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/23/20,,,isolated
+141,,,,Oriental,,,,,,,,,3/23/20,,,isolated
+142,,,,Oriental,,,,,,,,,3/23/20,,,isolated
+143,,,,Casablanca - Settat,,,,,,,,,3/24/20,,,isolated
+144,,,,Casablanca - Settat,,,,,,,,,3/24/20,,,isolated
+145,,,,Casablanca - Settat,,,,,,,,,3/24/20,,,isolated
+146,,,,Casablanca - Settat,,,,,,,,,3/24/20,,,isolated
+147,,,,Casablanca - Settat,,,,,,,,,3/24/20,,,isolated
+148,,,,Casablanca - Settat,,,,,,,,,3/24/20,,,isolated
+149,,,,Casablanca - Settat,,,,,,,,,3/24/20,,,isolated
+150,,,,Casablanca - Settat,,,,,,,,,3/24/20,,,isolated
+151,,,,Rabat - Sale - Kenitra,,,,,,,,,3/24/20,,,isolated
+152,,,,Rabat - Sale - Kenitra,,,,,,,,,3/24/20,,,isolated
+153,,,,Rabat - Sale - Kenitra,,,,,,,,,3/24/20,,,isolated
+154,,,,Rabat - Sale - Kenitra,,,,,,,,,3/24/20,,,isolated
+155,,,,Rabat - Sale - Kenitra,,,,,,,,,3/24/20,,,isolated
+156,,,,Rabat - Sale - Kenitra,,,,,,,,,3/24/20,,,isolated
+157,,,,Rabat - Sale - Kenitra,,,,,,,,,3/24/20,,,isolated
+158,,,,Rabat - Sale - Kenitra,,,,,,,,,3/24/20,,,isolated
+159,,,,Marrakech - Safi,,,,,,,,,3/24/20,,,isolated
+160,,,,Marrakech - Safi,,,,,,,,,3/24/20,,,isolated
+161,,,,Marrakech - Safi,,,,,,,,,3/24/20,,,isolated
+162,,,,Marrakech - Safi,,,,,,,,,3/24/20,,,isolated
+163,,,,Marrakech - Safi,,,,,,,,,3/24/20,,,isolated
+164,,,,Marrakech - Safi,,,,,,,,,3/24/20,,,isolated
+165,,,,Marrakech - Safi,,,,,,,,,3/24/20,,,isolated
+166,female,68,,Fes - Meknes,,,,,,,,,3/25/20,,,isolated
+167,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/24/20,,,isolated
+168,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/24/20,,,isolated
+169,,,,Beni Mellal - Khenifra,,,,,,,,,3/24/20,,,isolated
+170,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+171,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+172,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+173,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+174,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+175,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+176,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+177,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+178,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+179,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+180,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+181,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+182,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+183,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+184,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+185,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+186,,,,Casablanca - Settat,,,,,,,,,3/25/20,,,isolated
+187,,,,Rabat - Sale - Kenitra,,,,,,,,,3/25/20,,,isolated
+188,,,,Rabat - Sale - Kenitra,,,,,,,,,3/25/20,,,isolated
+189,,,,Rabat - Sale - Kenitra,,,,,,,,,3/25/20,,,isolated
+190,,,,Rabat - Sale - Kenitra,,,,,,,,,3/25/20,,,isolated
+191,,,,Rabat - Sale - Kenitra,,,,,,,,,3/25/20,,,isolated
+192,male,35,,Marrakech - Safi,1,,,,,,,,3/25/20,,3/27/20,Deceased
+193,male,,,Marrakech - Safi,1,,,,,,,,3/25/20,,3/27/20,Deceased
+194,male,,,Marrakech - Safi,1,,,,,,,,3/25/20,,3/27/20,Deceased
+195,,,,Marrakech - Safi,,,,,,,,,3/25/20,,,isolated
+196,,,,Marrakech - Safi,,,,,,,,,3/25/20,,,isolated
+197,,,,Marrakech - Safi,,,,,,,,,3/25/20,,,isolated
+198,,,,Marrakech - Safi,,,,,,,,,3/25/20,,,isolated
+199,,,,Marrakech - Safi,,,,,,,,,3/25/20,,,isolated
+200,,,,Marrakech - Safi,,,,,,,,,3/25/20,,,isolated
+201,,,,Marrakech - Safi,,,,,,,,,3/25/20,,,isolated
+202,female,75,,Fes - Meknes,,,,03/10/2020,local,,,,3/25/20,,,isolated
+203,female,64,,Fes - Meknes,,,,03/10/2020,local,,,,3/25/20,,,isolated
+204,male,62,,Fes - Meknes,,,,03/10/2020,local,,,,3/25/20,,,isolated
+205,female,56,,Fes - Meknes,,,,03/10/2020,local,,,,3/25/20,,,isolated
+206,male,75,,Fes - Meknes,,,,03/10/2020,local,,,,3/25/20,,,isolated
+207,female,67,,Fes - Meknes,,,,03/10/2020,local,,,,3/25/20,,,isolated
+208,female,72,,Fes - Meknes,,,,03/10/2020,local,,,,3/25/20,,,isolated
+209,male,72,,Fes - Meknes,,,,03/10/2020,local,,,,3/25/20,,,isolated
+210,female,56,,Fes - Meknes,,,,03/10/2020,local,,,,3/25/20,,,isolated
+211,male,65,,Fes - Meknes,,,,03/10/2020,local,,,,3/25/20,,,isolated
+212,female,67,,Fes - Meknes,,,,03/10/2020,imported,,,,3/25/20,,,isolated
+213,female,51,,Fes - Meknes,,,,03/10/2020,imported,,,,3/25/20,,,isolated
+214,male,75,,Fes - Meknes,,,,03/10/2020,imported,,,,3/25/20,,,isolated
+215,female,71,,Fes - Meknes,,,,03/10/2020,imported,,,,3/25/20,,,isolated
+216,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/25/20,,,isolated
+217,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/25/20,,,isolated
+218,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/25/20,,,isolated
+219,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,3/25/20,,,isolated
+220,,,,Souss - Massa,,,,,,,,,3/25/20,,,isolated
+221,,,,Souss - Massa,,,,,,,,,3/25/20,,,isolated
+222,,,,Beni Mellal - Khenifra,,,,,,,,,3/25/20,,,isolated
+223,,,,Beni Mellal - Khenifra,,,,,,,,,3/25/20,,,isolated
+224,male,40,,Daraa - Tafilalet,,,,,local,,,,3/25/20,,,isolated
+225,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+226,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+227,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+228,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+229,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+230,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+231,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+232,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+233,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+234,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+235,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+236,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+237,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+238,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+239,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+240,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+241,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+242,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+243,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+244,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+245,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+246,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+247,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+248,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+249,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+250,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+251,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+252,,,,Casablanca - Settat,,,,,,,,,03/26/20,,,isolated
+253,,,,Rabat - Sale - Kenitra,,,,,,,,,03/26/20,,,isolated
+254,,,,Rabat - Sale - Kenitra,,,,,,,,,03/26/20,,,isolated
+255,,,,Rabat - Sale - Kenitra,,,,,,,,,03/26/20,,,isolated
+256,,,,Rabat - Sale - Kenitra,,,,,,,,,03/26/20,,,isolated
+257,,,,Rabat - Sale - Kenitra,,,,,,,,,03/26/20,,,isolated
+258,,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+259,,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+260,,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+261,,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+262,,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+263,,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+264,,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+265,,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+266,,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+267,,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+268,male,,,Marrakech - Safi,,,,,,,,,03/26/20,,,isolated
+269,female,65,,Fes - Meknes,,,,03/10/2020,Imported,,,,3/25/20,,,isolated
+270,,,,Tanger - Tetouan - Al Houceima,,,,,,,,,03/26/20,,,isolated
+271,,,,Souss - Massa,,,,,,,,,03/26/20,,,isolated
+272,,,,Souss - Massa,,,,,,,,,03/26/20,,,isolated
+273,,,,Beni Mellal - Khenifra,,,,,,,,,03/26/20,,,isolated
+274,male,57,,Daraa - Tafilalet,,,,,Imported,,,,03/26/20,,,isolated
+275,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+276,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+277,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+278,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+279,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+280,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+281,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+282,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+283,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+284,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+285,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+286,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+287,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+288,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+289,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+290,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+291,,,,Casablanca - Settat,,,,,Local,,,,3/27/20,,,isolated
+292,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/27/20,,,isolated
+293,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/27/20,,,isolated
+294,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/27/20,,,isolated
+295,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/27/20,,,isolated
+296,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/27/20,,,isolated
+297,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/27/20,,,isolated
+298,,,,Marrakech - Safi,,,,,Local,,,,3/27/20,,,isolated
+299,,,,Marrakech - Safi,,,,,Local,,,,3/27/20,,,isolated
+300,,,,Marrakech - Safi,,,,,Local,,,,3/27/20,,,isolated
+301,,,,Marrakech - Safi,,,,,Local,,,,3/27/20,,,isolated
+302,,,,Marrakech - Safi,,,,,Local,,,,3/27/20,,,isolated
+303,,,,Marrakech - Safi,,,,,Local,,,,3/27/20,,,isolated
+304,,,,Marrakech - Safi,,,,,Local,,,,3/27/20,,,isolated
+305,,,,Marrakech - Safi,,,,,Local,,,,3/27/20,,,isolated
+306,female,,,Fes - Meknes,,,,,Local,,,,3/26/20,,,isolated
+307,male,,,Fes - Meknes,,,,,Local,,,,3/26/20,,,isolated
+308,male,,,Fes - Meknes,,,,,Local,,,,3/26/20,,,isolated
+309,,,,Fes - Meknes,,,,,Local,,,,3/27/20,,,isolated
+310,,,,Fes - Meknes,,,,,Local,,,,3/27/20,,,isolated
+311,,,,Fes - Meknes,,,,,Local,,,,3/27/20,,,isolated
+312,,,,Fes - Meknes,,,,,Local,,,,3/27/20,,,isolated
+313,,,,Fes - Meknes,,,,,Local,,,,3/27/20,,,isolated
+314,,,,Fes - Meknes,,,,,Local,,,,3/27/20,,,isolated
+315,,,,Fes - Meknes,,,,,Local,,,,3/27/20,,,isolated
+316,,,,Fes - Meknes,,,,,Local,,,,3/27/20,,,isolated
+317,,,,Fes - Meknes,,,,,Local,,,,3/27/20,,,isolated
+318,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/27/20,,,isolated
+319,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/27/20,,,isolated
+320,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/27/20,,,isolated
+321,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/27/20,,,isolated
+322,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/27/20,,,isolated
+323,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/27/20,,,isolated
+324,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/27/20,,,isolated
+325,,,,Souss - Massa,,,,,Local,,,,3/27/20,,,isolated
+326,,,,Oriental,,,,,Local,,,,3/27/20,,,isolated
+327,,,,Oriental,,,,,Local,,,,3/27/20,,,isolated
+328,,,,Oriental,,,,,Local,,,,3/27/20,,,isolated
+329,,,,Oriental,,,,,Local,,,,3/27/20,,,isolated
+330,,,,Oriental,,,,,Local,,,,3/27/20,,,isolated
+331,,,,Daraa - Tafilalet,,,,,Local,,,,3/27/20,,,isolated
+332,,,,Daraa - Tafilalet,,,,,Local,,,,3/27/20,,,isolated
+333,,,,Casablanca - Settat,,,,,Local,,,,3/28/20,,,isolated
+334,,,,Casablanca - Settat,,,,,Local,,,,3/28/20,,,isolated
+335,,,,Casablanca - Settat,,,,,Local,,,,3/28/20,,,isolated
+336,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/28/20,,,isolated
+337,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/28/20,,,isolated
+338,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/28/20,,,isolated
+339,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/28/20,,,isolated
+340,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/28/20,,,isolated
+341,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/28/20,,,isolated
+342,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/28/20,,,isolated
+343,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/28/20,,,isolated
+344,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+345,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+346,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+347,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+348,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+349,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+350,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+351,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+352,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+353,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+354,,,,Marrakech - Safi,,,,,Local,,,,3/28/20,,,isolated
+355,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/28/20,,,isolated
+356,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/28/20,,,isolated
+357,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/28/20,,,isolated
+358,,,,Oriental,,,,,Local,,,,3/28/20,,,isolated
+359,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+360,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+361,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+362,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+363,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+364,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+365,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+366,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+367,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+368,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+369,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+370,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+371,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+372,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+373,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+374,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+375,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+376,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+377,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+378,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+379,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+380,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+381,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+382,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+383,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+384,,,,Casablanca - Settat,,,,,Local,,,,3/29/20,,,isolated
+385,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+386,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+387,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+388,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+389,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+390,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+391,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+392,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+393,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+394,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+395,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+396,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+397,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+398,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+399,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+400,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+401,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+402,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+403,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/29/20,,,isolated
+404,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+405,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+406,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+407,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+408,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+409,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+410,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+411,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+412,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+413,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+414,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+415,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+416,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+417,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+418,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+419,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+420,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+421,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+422,,,,Marrakech - Safi,,,,,Local,,,,3/29/20,,,isolated
+423,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+424,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+425,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+426,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+427,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+328,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+429,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+430,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+431,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+432,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+433,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+434,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+435,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+436,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+437,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+438,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+439,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+440,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+441,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+442,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+443,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+444,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+445,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+446,,,,Fes - Meknes,,,,,Local,,,,3/29/20,,,isolated
+447,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/29/20,,,isolated
+448,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/29/20,,,isolated
+449,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/29/20,,,isolated
+450,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/29/20,,,isolated
+451,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/29/20,,,isolated
+452,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/29/20,,,isolated
+453,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/29/20,,,isolated
+454,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/29/20,,,isolated
+455,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/29/20,,,isolated
+456,,,,Souss - Massa,,,,,Local,,,,3/29/20,,,isolated
+457,,,,Souss - Massa,,,,,Local,,,,3/29/20,,,isolated
+458,,,,Souss - Massa,,,,,Local,,,,3/29/20,,,isolated
+459,,,,Oriental,,,,,Local,,,,3/29/20,,,isolated
+460,,,,Oriental,,,,,Local,,,,3/29/20,,,isolated
+461,,,,Oriental,,,,,Local,,,,3/29/20,,,isolated
+462,,,,Daraa - Tafilalet,,,,,Local,,,,3/29/20,,,isolated
+463,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+464,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+465,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+466,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+467,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+468,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+469,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+470,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+471,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+472,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+473,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+474,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+475,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+476,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+477,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+478,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+479,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+480,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+481,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+482,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+483,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+484,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+485,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+486,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+487,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+488,,,,Casablanca - Settat,,,,,Local,,,,3/30/20,,,isolated
+489,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/30/20,,,isolated
+490,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/30/20,,,isolated
+491,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/30/20,,,isolated
+492,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/30/20,,,isolated
+493,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/30/20,,,isolated
+494,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+495,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+496,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+497,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+498,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+499,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+500,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+501,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+502,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+503,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+504,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+505,,,,Marrakech - Safi,,,,,Local,,,,3/30/20,,,isolated
+506,,,,Fes - Meknes,,,,,Local,,,,3/30/20,,,isolated
+507,,,,Fes - Meknes,,,,,Local,,,,3/30/20,,,isolated
+508,,,,Fes - Meknes,,,,,Local,,,,3/30/20,,,isolated
+509,,,,Fes - Meknes,,,,,Local,,,,3/30/20,,,isolated
+510,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/30/20,,,isolated
+511,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/30/20,,,isolated
+512,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/30/20,,,isolated
+513,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/30/20,,,isolated
+514,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/30/20,,,isolated
+515,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/30/20,,,isolated
+516,,,,Souss - Massa,,,,,Local,,,,3/30/20,,,isolated
+517,,,,Souss - Massa,,,,,Local,,,,3/30/20,,,isolated
+518,,,,Souss - Massa,,,,,Local,,,,3/30/20,,,isolated
+519,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/30/20,,,isolated
+520,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/30/20,,,isolated
+521,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/30/20,,,isolated
+522,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/30/20,,,isolated
+523,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/30/20,,,isolated
+524,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/30/20,,,isolated
+525,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/30/20,,,isolated
+526,,,,Oriental,,,,,Local,,,,3/30/20,,,isolated
+527,,,,Oriental,,,,,Local,,,,3/30/20,,,isolated
+528,,,,Oriental,,,,,Local,,,,3/30/20,,,isolated
+529,,,,Oriental,,,,,Local,,,,3/30/20,,,isolated
+530,,,,Oriental,,,,,Local,,,,3/30/20,,,isolated
+531,,,,Oriental,,,,,Local,,,,3/30/20,,,isolated
+532,,,,Daraa - Tafilalet,,,,,Local,,,,3/30/20,,,isolated
+533,,,,Daraa - Tafilalet,,,,,Local,,,,3/30/20,,,isolated
+534,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+535,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+536,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+537,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+538,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+539,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+540,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+541,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+542,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+543,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+544,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+545,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+546,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+547,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+548,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+549,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+550,,,,Casablanca - Settat,,,,,Local,,,,3/31/20,,,isolated
+551,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+552,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+553,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+554,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+555,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+556,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+557,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+558,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+559,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+560,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+561,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+562,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+563,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+564,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+565,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+566,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+567,,,,Rabat - Sale - Kenitra,,,,,Local,,,,3/31/20,,,isolated
+568,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+569,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+570,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+571,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+572,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+573,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+574,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+575,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+576,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+577,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+578,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+579,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+580,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+581,,,,Marrakech - Safi,,,,,Local,,,,3/31/20,,,isolated
+582,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+583,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+584,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+585,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+586,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+587,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+588,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+589,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+590,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+591,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+592,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+593,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+594,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+595,,,,Fes - Meknes,,,,,Local,,,,3/31/20,,,isolated
+596,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,3/31/20,,,isolated
+597,,,,Beni Mellal - Khenifra,,,,,Local,,,,3/31/20,,,isolated
+598,,,,Oriental,,,,,Local,,,,3/31/20,,,isolated
+599,,,,Daraa - Tafilalet,,,,,Local,,,,3/31/20,,,isolated
+600,,,,Daraa - Tafilalet,,,,,Local,,,,3/31/20,,,isolated
+601,,,,Daraa - Tafilalet,,,,,Local,,,,3/31/20,,,isolated
+602,,,,Casablanca - Settat,,,,,Local,,,,4/1/20,,,isolated
+603,,,,Casablanca - Settat,,,,,Local,,,,4/1/20,,,isolated
+604,,,,Casablanca - Settat,,,,,Local,,,,4/1/20,,,isolated
+605,,,,Casablanca - Settat,,,,,Local,,,,4/1/20,,,isolated
+606,,,,Casablanca - Settat,,,,,Local,,,,4/1/20,,,isolated
+607,,,,Rabat - Sale - Kenitra,,,,,Local,,,,4/1/20,,,isolated
+608,,,,Rabat - Sale - Kenitra,,,,,Local,,,,4/1/20,,,isolated
+609,,,,Rabat - Sale - Kenitra,,,,,Local,,,,4/1/20,,,isolated
+610,,,,Rabat - Sale - Kenitra,,,,,Local,,,,4/1/20,,,isolated
+611,,,,Rabat - Sale - Kenitra,,,,,Local,,,,4/1/20,,,isolated
+612,,,,Rabat - Sale - Kenitra,,,,,Local,,,,4/1/20,,,isolated
+613,,,,Rabat - Sale - Kenitra,,,,,Local,,,,4/1/20,,,isolated
+614,,,,Marrakech - Safi,,,,,Local,,,,4/1/20,,,isolated
+615,,,,Marrakech - Safi,,,,,Local,,,,4/1/20,,,isolated
+616,,,,Marrakech - Safi,,,,,Local,,,,4/1/20,,,isolated
+617,,,,Marrakech - Safi,,,,,Local,,,,4/1/20,,,isolated
+618,,,,Marrakech - Safi,,,,,Local,,,,4/1/20,,,isolated
+619,,,,Marrakech - Safi,,,,,Local,,,,4/1/20,,,isolated
+620,,,,Marrakech - Safi,,,,,Local,,,,4/1/20,,,isolated
+621,,,,Marrakech - Safi,,,,,Local,,,,4/1/20,,,isolated
+622,,,,Fes - Meknes,,,,,Local,,,,4/1/20,,,isolated
+623,,,,Fes - Meknes,,,,,Local,,,,4/1/20,,,isolated
+624,,,,Fes - Meknes,,,,,Local,,,,4/1/20,,,isolated
+625,,,,Fes - Meknes,,,,,Local,,,,4/1/20,,,isolated
+626,,,,Fes - Meknes,,,,,Local,,,,4/1/20,,,isolated
+627,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,4/1/20,,,isolated
+628,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,4/1/20,,,isolated
+629,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,4/1/20,,,isolated
+630,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,4/1/20,,,isolated
+631,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,4/1/20,,,isolated
+632,,,,Beni Mellal - Khenifra,,,,,Local,,,,4/1/20,,,isolated
+633,,,,Beni Mellal - Khenifra,,,,,Local,,,,4/1/20,,,isolated
+634,,,,Beni Mellal - Khenifra,,,,,Local,,,,4/1/20,,,isolated
+635,,,,Oriental,,,,,Local,,,,4/1/20,,,isolated
+636,,,,Oriental,,,,,Local,,,,4/1/20,,,isolated
+637,,,,Oriental,,,,,Local,,,,4/1/20,,,isolated
+638,,,,Daraa - Tafilalet,,,,,Local,,,,4/1/20,,,isolated
+639,,,,Daraa - Tafilalet,,,,,Local,,,,4/1/20,,,isolated
+640,male,58,,Laayoune - Saguia al hamra,,,,,Local,,,,4/1/20,,,isolated
+641,female,38,,Laayoune - Saguia al hamra,,,,,Local,,,,4/1/20,,,isolated
+642,,,,Casablanca - Settat,,,,,Local,,,,4/2/20,,,isolated
+643,,,,Casablanca - Settat,,,,,Local,,,,4/2/20,,,isolated
+644,,,,Casablanca - Settat,,,,,Local,,,,4/2/20,,,isolated
+645,,,,Casablanca - Settat,,,,,Local,,,,4/2/20,,,isolated
+646,,,,Casablanca - Settat,,,,,Local,,,,4/2/20,,,isolated
+647,,,,Casablanca - Settat,,,,,Local,,,,4/2/20,,,isolated
+648,,,,Casablanca - Settat,,,,,Local,,,,4/2/20,,,isolated
+649,,,,Casablanca - Settat,,,,,Local,,,,4/2/20,,,isolated
+650,,,,Rabat - Sale - Kenitra,,,,,Local,,,,4/2/20,,,isolated
+651,,,,Rabat - Sale - Kenitra,,,,,Local,,,,4/2/20,,,isolated
+652,,,,Rabat - Sale - Kenitra,,,,,Local,,,,4/2/20,,,isolated
+653,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+654,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+655,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+656,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+657,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+658,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+659,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+660,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+661,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+662,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+663,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+664,,,,Marrakech - Safi,,,,,Local,,,,4/2/20,,,isolated
+665,,,,Fes - Meknes,,,,,Local,,,,4/2/20,,,isolated
+666,,,,Fes - Meknes,,,,,Local,,,,4/2/20,,,isolated
+667,,,,Fes - Meknes,,,,,Local,,,,4/2/20,,,isolated
+668,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,4/2/20,,,isolated
+669,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,4/2/20,,,isolated
+670,,,,Tanger - Tetouan - Al Houceima,,,,,Local,,,,4/2/20,,,isolated
+671,,,,Souss - Massa,,,,,Local,,,,4/2/20,,,isolated
+672,,,,Beni Mellal - Khenifra,,,,,Local,,,,4/2/20,,,isolated
+673,,,,Beni Mellal - Khenifra,,,,,Local,,,,4/2/20,,,isolated
+674,,,,Oriental,,,,,Local,,,,4/2/20,,,isolated
+675,,,,Oriental,,,,,Local,,,,4/2/20,,,isolated
+676,,,,Oriental,,,,,Local,,,,4/2/20,,,isolated
+677,,,,Oriental,,,,,Local,,,,4/2/20,,,isolated
+678,,,,Oriental,,,,,Local,,,,4/2/20,,,isolated
+679,,,,Oriental,,,,,Local,,,,4/2/20,,,isolated
+680,,,,Oriental,,,,,Local,,,,4/2/20,,,isolated
+681,,,,Oriental,,,,,Local,,,,4/2/20,,,isolated
+682,,,,Oriental,,,,,Local,,,,4/2/20,,,isolated
+683,,,,Daraa - Tafilalet,,,,,Local,,,,4/2/20,,,isolated
+684,,,,Daraa - Tafilalet,,,,,Local,,,,4/2/20,,,isolated
+685,,,,Daraa - Tafilalet,,,,,Local,,,,4/2/20,,,isolated
+686,,,,Daraa - Tafilalet,,,,,Local,,,,4/2/20,,,isolated
+687,,,,Daraa - Tafilalet,,,,,Local,,,,4/2/20,,,isolated
+688,,,,Daraa - Tafilalet,,,,,Local,,,,4/2/20,,,isolated
+689,,,,Daraa - Tafilalet,,,,,Local,,,,4/2/20,,,isolated
+690,,,,Guelmim - Oued Noun,,,,,Local,,,,4/2/20,,,isolated
