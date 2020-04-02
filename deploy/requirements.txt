@@ -1,0 +1,16 @@
+numpy>=1.16.4
+scipy>=0.18
+matplotlib
+plotly
+pandas
+pyyaml
+cufflinks
+dash
+dash_daq
+dataflows
+datapackage
+dash
+dash-html-components
+dash-core-components
+dash_bootstrap_components
+gunicorn
