@@ -219,6 +219,7 @@ def update_map(provinces, start_date, end_date):
     # ...
 
     traces = []
+    df_RD = []
 
     # ...
     if 'contours' in list(namespace.keys()):
@@ -230,7 +231,12 @@ def update_map(provinces, start_date, end_date):
     # ...
 
     # ...
-    traces += plotly_country_n_patients(d_barycenters, df)
+    tarcesObject = plotly_country_n_patients(d_barycenters, df)
+    for key, value in tarcesObject.items():
+        if key == 'trace':
+            traces += value
+        elif key == 'df_RD':
+            df_RD = value
     # ...
 
     # ...
@@ -249,7 +255,7 @@ def update_map(provinces, start_date, end_date):
                         showlegend=showlegend,
                         paper_bgcolor='rgba(0,0,0,0)',
                         plot_bgcolor='rgba(0,0,0,0)',
-                        title="Distribution of cases by province",
+                        title="<b style='color:orange'>Hospitalized: " + str(df_RD['hospitalized'].sum()) + "</b> | <b style='color:green'>Recovered: " + str(df_RD['recovered'].sum()) + "</b> | <b style='color:red'>Deaths: " + str(df_RD['deceased'].sum()) + "</b> | <b style='color:#22549F'>Total: " + str(df_RD['cases'].sum()) + "</b><br> <span style='color:#22549F'>Distribution of cases by province:</span><br>(Please move the mouse over the map to display the results)",
                         height=650  # px
                       )
         

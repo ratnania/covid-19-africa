@@ -172,18 +172,20 @@ def plotly_country_n_patients(d_barycenters, df):
         n = len(_df.index)
         n_patients.append(n)
     # ...
-
-    # TODO remove position + trace id from hover
+    
+    df_RD = getDfRecoveredDeathsHospitalized(n_patients)
+    
     trace = go.Scatter(
         x=x,
         y=y,
         mode = 'markers',
         marker=dict(color='red'),
         marker_size=[(i/6) for i in n_patients],
-        hovertext=[str(i)+ ' cases' for i in n_patients],
+        textposition='bottom center',
+        hovertext=['Hospitalized: '+ str(row['hospitalized']) + ' | Recovered: ' + str(row['recovered']) + ' | Deaths: ' + str(row['deceased']) + ' | Total: '+ str(row['cases']) + " cases" for index,row in df_RD.iterrows()],
         hoverinfo='text'
     )
-    return [trace]
+    return { 'trace':[trace], 'df_RD': df_RD}
 
 # =================================================================
 def load_country_patients(country):
@@ -206,6 +208,18 @@ def load_country_statistics_gender(country):
     df = read_csv(fname)
     return df
 
+# =================================================================
+def load_country_statistics_recovered_deceased(country):
+    # TODO take patients.csv
+    fname = '../datasets/{country}/statistiques-recovered-deceased.csv'.format(country=country.lower())
+    df = read_csv(fname)
+    return df
+
+def getDfRecoveredDeathsHospitalized(n_patients):
+    df_RD = load_country_statistics_recovered_deceased('morocco')
+    df_RD['cases'] = n_patients
+    df_RD['hospitalized'] = df_RD['cases'] - (df_RD['recovered'] + df_RD['deceased'])
+    return df_RD
 # =================================================================
 def compute_barycenters(d_contours):
     d_barycenters = {}
