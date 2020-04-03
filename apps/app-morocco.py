@@ -375,9 +375,36 @@ def update_pieChartGender(provinces, start_date, end_date, criteria):
             "bordercolor": "rgb(68, 68, 68)",
             "borderwidth": 1,
             "orientation": "v"
-        },
+        }
     }
-    
+    layoutAll = {
+        "title": {
+            "text": "Distribution of cases by gender : All provinces"
+        },
+        "xaxis": dict(showticklabels=False,
+                    showgrid=False,
+                    zeroline=False),
+        "yaxis": dict(scaleanchor="x",
+                    scaleratio=1,
+                    showticklabels=False,
+                    showgrid=False,
+                    showline=False,
+                    zeroline=False),
+        "paper_bgcolor": 'rgba(0,0,0,0)',
+        "plot_bgcolor": 'rgba(0,0,0,0)',
+        "legend": {
+            "x": 1.037488076311606,
+            "y": 1,
+            "title": {
+                "text": "Gender"
+            },
+            "traceorder": "reversed",
+            "bordercolor": "rgb(68, 68, 68)",
+            "borderwidth": 1,
+            "orientation": "v"
+        }
+    }
+        
     if len(provinces) == 0:
         return {'data': piedata, 'layout': layoutEmpty}
     if 'gender' not in criteria:
@@ -404,6 +431,7 @@ def update_pieChartGender(provinces, start_date, end_date, criteria):
             dfGender = namespace['statistics_gender']
             labels = []
             values = []
+            layout = layoutAll
             nbrMale = int(dfGender[dfGender['cle'] == 'male']['valeur'])
             nbrFemale = int(dfGender[dfGender['cle'] == 'female']['valeur'])
             for line in range(0, nbrMale):
@@ -533,6 +561,10 @@ def update_pieChartAge(provinces, start_date, end_date, criteria):
                 for line in range(0, _sup_65):
                     labels.append('> 65  YEARS')
                     values.append('1')
+            else:
+                for i, element in enumerate(labels):
+                    if element == 'OTHERS':
+                        labels[i] = '> 65  YEARS'
 
     piedata = go.Pie(
             labels = labels,
