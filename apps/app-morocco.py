@@ -142,6 +142,14 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
             [
                 dbc.Col(html.Div(
                     html.Div([
+                html.Div([dcc.Graph(id="evolutionByDate")]),
+                ])), className="col-md-12")
+            ], 
+        ),
+        dbc.Row(
+            [
+                dbc.Col(html.Div(
+                    html.Div([
                 html.Div([dcc.Graph(id="graph")]),
                 ])), className="col-md-12")
             ], 
@@ -287,7 +295,7 @@ def update_graph(provinces, start_date, end_date):
                         showlegend=True,
                         paper_bgcolor='rgba(0,0,0,0)',
                         plot_bgcolor='rgba(0,0,0,0)',
-                        title="Evolution of COVID-19"
+                        title="Evolution of COVID-19 by province"
                       )
     # ...
 
@@ -336,6 +344,66 @@ def update_graph(provinces, start_date, end_date):
     # ...
 
     return {'data': traces, 'layout': layout}
+
+# =================================================================
+@app.callback(
+    Output("evolutionByDate", "figure"),
+    [Input('date-picker-range', 'start_date'),
+     Input('date-picker-range', 'end_date')]
+)
+def evolutionByDate(start_date, end_date):
+
+    traces = []
+
+    # ...
+    layout = go.Layout( xaxis=dict(showticklabels=True,
+                                   showgrid=False,
+                                   zeroline=False),
+                        yaxis=dict(scaleanchor="x",
+                                   scaleratio=1,
+                                   showticklabels=True,
+                                   showgrid=True,
+                                   showline=True,
+                                   zeroline=True),
+                        showlegend=True,
+                        paper_bgcolor='rgba(0,0,0,0)',
+                        plot_bgcolor='rgba(0,0,0,0)',
+                        title="Evolution of confirmed cases"
+                      )
+
+    date_key = 'confirmed_date'
+
+    df = select_by_date(namespace['patients'], date_key, start_date, end_date)
+    
+    df0 =  pd.DataFrame([0, 0], index=pd.to_datetime([start_date, end_date]))
+    
+    dt_series = df[date_key].value_counts()
+    dt_series = dt_series.append(df0)
+    dt_series = dt_series[~dt_series.index.duplicated()]
+    dt_series.sort_index(inplace=True)
+    dt_series = dt_series.asfreq('D')
+    dt_series = dt_series.fillna(0)
+    
+    dates = dt_series.axes[0]
+    days = dates.day
+    months = dates.month
+    dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
+
+    values = dt_series.values[:,0]
+
+    line_marker = dict(width=2)
+
+    trace =  go.Bar(
+        x=dates,
+        y=values,
+        name='Evolution per Day',
+    )
+
+    traces.append(trace)
+    # ...
+
+    return {'data': traces, 'layout': layout}
+
 
 # =================================================================
 @app.callback(
