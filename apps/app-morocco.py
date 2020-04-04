@@ -298,20 +298,40 @@ def update_graph(provinces, start_date, end_date):
                         title="Evolution of COVID-19 by province"
                       )
     # ...
-
-    if len(provinces) == 0:
-        return {'data': traces, 'layout': layoutEmpty}
-
-    # ...
-    # TODO we should use dash storage
     date_key = 'confirmed_date'
-
     df = select_by_date(namespace['patients'], date_key, start_date, end_date)
-    # ...
-
-    # ...
     df0 =  pd.DataFrame([0, 0], index=pd.to_datetime([start_date, end_date]))
 
+    if len(provinces) == 0:
+        dt_series = df[date_key].value_counts()
+        dt_series = dt_series.append(df0)
+        dt_series = dt_series[~dt_series.index.duplicated()]
+        dt_series.sort_index(inplace=True)
+        dt_series = dt_series.asfreq('D')
+        dt_series = dt_series.fillna(0)
+        dt_series = dt_series.cumsum()
+
+        dates = dt_series.axes[0]
+        days = dates.day
+        months = dates.month
+        dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
+
+        values = dt_series.values[:,0]
+
+        line_marker = dict(width=2)
+
+        trace = go.Scatter(
+            x=dates,
+            y=values,
+            mode = 'lines',
+            name='All provinces',
+            line=line_marker,
+        )
+        traces.append(trace)    
+        return {'data': traces, 'layout': layout}
+
+    # ...
+    
     for province in provinces:
         _df = df[df['province'] == province]
 
