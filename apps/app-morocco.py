@@ -208,7 +208,7 @@ def hideGraphAge(input):
 def updatedAt(start_date, end_date):
     date_key = 'confirmed_date'
     df = select_by_date(namespace['patients'], date_key, start_date, end_date)
-    return list(df[date_key])[-1].strftime('%d-%m-%Y')
+    return list(df[date_key])[-1].strftime('%d-%m-%Y') + " 18H00"
 
 # =================================================================
 @app.callback(
@@ -368,10 +368,11 @@ def update_graph(provinces, start_date, end_date):
 # =================================================================
 @app.callback(
     Output("evolutionByDate", "figure"),
-    [Input('date-picker-range', 'start_date'),
+    [Input("province", "value"),
+     Input('date-picker-range', 'start_date'),
      Input('date-picker-range', 'end_date')]
 )
-def evolutionByDate(start_date, end_date):
+def evolutionByDate(provinces, start_date, end_date):
 
     traces = []
 
@@ -394,36 +395,63 @@ def evolutionByDate(start_date, end_date):
     date_key = 'confirmed_date'
 
     df = select_by_date(namespace['patients'], date_key, start_date, end_date)
-    
     df0 =  pd.DataFrame([0, 0], index=pd.to_datetime([start_date, end_date]))
     
-    dt_series = df[date_key].value_counts()
-    dt_series = dt_series.append(df0)
-    dt_series = dt_series[~dt_series.index.duplicated()]
-    dt_series.sort_index(inplace=True)
-    dt_series = dt_series.asfreq('D')
-    dt_series = dt_series.fillna(0)
-    
-    dates = dt_series.axes[0]
-    days = dates.day
-    months = dates.month
-    dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
+    if len(provinces) == 0:
+        dt_series = df[date_key].value_counts()
+        dt_series = dt_series.append(df0)
+        dt_series = dt_series[~dt_series.index.duplicated()]
+        dt_series.sort_index(inplace=True)
+        dt_series = dt_series.asfreq('D')
+        dt_series = dt_series.fillna(0)
+        
+        dates = dt_series.axes[0]
+        days = dates.day
+        months = dates.month
+        dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
 
-    values = dt_series.values[:,0]
+        values = dt_series.values[:,0]
 
-    line_marker = dict(width=2)
+        line_marker = dict(width=2)
 
-    trace =  go.Bar(
-        x=dates,
-        y=values,
-        name='Evolution per Day',
-    )
+        trace =  go.Bar(
+            x=dates,
+            y=values,
+            name='Evolution per Day',
+        )
 
-    traces.append(trace)
+        traces.append(trace)
+        # ...
+
+        return {'data': traces, 'layout': layout}
+    for province in provinces:
+        _df = df[df['province'] == province]
+        dt_series = _df[date_key].value_counts()
+        dt_series = dt_series.append(df0)
+        dt_series = dt_series[~dt_series.index.duplicated()]
+        dt_series.sort_index(inplace=True)
+        dt_series = dt_series.asfreq('D')
+        dt_series = dt_series.fillna(0)
+        
+        dates = dt_series.axes[0]
+        days = dates.day
+        months = dates.month
+        dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
+
+        values = dt_series.values[:,0]
+
+        line_marker = dict(width=2)
+
+        trace =  go.Bar(
+            x=dates,
+            y=values,
+            name=province,
+        )
+
+        traces.append(trace)
     # ...
 
     return {'data': traces, 'layout': layout}
-
 
 # =================================================================
 @app.callback(
