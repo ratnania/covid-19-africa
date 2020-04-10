@@ -196,15 +196,19 @@ def load_country_patients(country):
 
 # =================================================================
 def load_country_statistics_age(country):
-    # TODO take patients.csv
     fname = '../datasets/{country}/statistiques-age.csv'.format(country=country.lower())
     df = read_csv(fname)
     return df
 
 # =================================================================
 def load_country_statistics_gender(country):
-    # TODO take patients.csv
     fname = '../datasets/{country}/statistiques-sex.csv'.format(country=country.lower())
+    df = read_csv(fname)
+    return df
+
+# =================================================================
+def load_country_statistics_global_recovered_deceased(country):
+    fname = '../datasets/{country}/statistiques-global-recovered-deceased.csv'.format(country=country.lower())
     df = read_csv(fname)
     return df
 

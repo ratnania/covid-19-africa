@@ -18,6 +18,7 @@ from utilities import load_country_map
 from utilities import load_country_patients
 from utilities import load_country_statistics_age
 from utilities import load_country_statistics_gender
+from utilities import load_country_statistics_global_recovered_deceased
 from utilities import compute_barycenters
 from utilities import plotly_country_map
 from utilities import plotly_country_n_patients
@@ -58,6 +59,7 @@ namespace['contours'] = load_country_map(COUNTRY)
 namespace['patients'] = load_country_patients(COUNTRY)
 namespace['statistics_age'] = load_country_statistics_age(COUNTRY)
 namespace['statistics_gender'] = load_country_statistics_gender(COUNTRY)
+namespace['statistics_recovered_deceased'] = load_country_statistics_global_recovered_deceased(COUNTRY)
 
 provinces = list(namespace['contours'].keys())
 
@@ -152,6 +154,22 @@ app.layout = html.Div(style={'backgroundColor': colors['background-body'], 'max-
                     html.Div([
                 html.Div([dcc.Graph(id="graph")]),
                 ])), className="col-md-12")
+            ], 
+        ),
+        dbc.Row(
+            [
+                dbc.Col(html.Div(
+                    html.Div([
+                 html.Div([dcc.Graph(id="grapheRecoveredDeseased")]),
+                ])), className="col-md-12"),
+            ], 
+        ),
+        dbc.Row(
+            [
+                dbc.Col(html.Div(
+                    html.Div([
+                 html.Div([dcc.Graph(id="grapheRecoveredDeseasedCumul")]),
+                ])), className="col-md-12"),
             ], 
         ),
         dbc.Row(
@@ -389,7 +407,7 @@ def evolutionByDate(provinces, start_date, end_date):
                         showlegend=True,
                         paper_bgcolor='rgba(0,0,0,0)',
                         plot_bgcolor='rgba(0,0,0,0)',
-                        title="Evolution of confirmed cases"
+                        title="Evolution of new cases per day"
                       )
 
     date_key = 'confirmed_date'
@@ -451,6 +469,139 @@ def evolutionByDate(provinces, start_date, end_date):
         traces.append(trace)
     # ...
 
+    return {'data': traces, 'layout': layout}
+
+# =================================================================
+@app.callback(
+    Output("grapheRecoveredDeseased", "figure"),
+    [Input('date-picker-range', 'start_date'),
+     Input('date-picker-range', 'end_date')]
+)
+def evolutionByDate(start_date, end_date):
+
+    traces = []
+
+    # ...
+    layout = go.Layout( xaxis=dict(showticklabels=True,
+                                   showgrid=False,
+                                   zeroline=False),
+                        yaxis=dict(scaleanchor="x",
+                                   scaleratio=1,
+                                   showticklabels=True,
+                                   showgrid=True,
+                                   showline=True,
+                                   zeroline=True),
+                        showlegend=True,
+                        paper_bgcolor='rgba(0,0,0,0)',
+                        plot_bgcolor='rgba(0,0,0,0)',
+                        title="Evolution of deseased and recovered cases"
+                      )
+
+    date_key = 'confirmed_date'
+
+    df = select_by_date(namespace['statistics_recovered_deceased'], date_key, start_date, end_date)
+    df0 =  pd.DataFrame([0, 0], index=pd.to_datetime([start_date, end_date]))
+    
+    dt_series = df[date_key].value_counts()
+    dt_series = dt_series.append(df0)
+    dt_series = dt_series[~dt_series.index.duplicated()]
+    dt_series.sort_index(inplace=True)
+    dt_series = dt_series.asfreq('D')
+    dt_series = dt_series.fillna(0) 
+    dates = dt_series.axes[0]
+    days = dates.day
+    months = dates.month
+    dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
+
+    values = dt_series.values[:,0]
+
+    line_marker = dict(width=2)
+
+    traceRecovered =  go.Bar(
+        x= dates,
+        y= df['recovered'],
+        name= 'Recovered per Day',
+        marker_color= 'green'
+    )
+
+    traceDeaths =  go.Bar(
+        x= dates,
+        y= df['deceased'],
+        name= 'Deceased per Day',
+        marker_color= 'red'
+    )
+
+    traces.append(traceRecovered)
+    traces.append(traceDeaths)
+    return {'data': traces, 'layout': layout}
+
+# =================================================================
+@app.callback(
+    Output("grapheRecoveredDeseasedCumul", "figure"),
+    [Input('date-picker-range', 'start_date'),
+     Input('date-picker-range', 'end_date')]
+)
+def evolutionByDate(start_date, end_date):
+
+    traces = []
+
+    # ...
+    layout = go.Layout( xaxis=dict(showticklabels=True,
+                                   showgrid=False,
+                                   zeroline=False),
+                        yaxis=dict(scaleanchor="x",
+                                   scaleratio=1,
+                                   showticklabels=True,
+                                   showgrid=True,
+                                   showline=True,
+                                   zeroline=True),
+                        showlegend=True,
+                        paper_bgcolor='rgba(0,0,0,0)',
+                        plot_bgcolor='rgba(0,0,0,0)',
+                        title="Evolution of deseased and recovered cases"
+                      )
+
+    date_key = 'confirmed_date'
+
+    df = select_by_date(namespace['statistics_recovered_deceased'], date_key, start_date, end_date)
+    df0 =  pd.DataFrame([0, 0], index=pd.to_datetime([start_date, end_date]))
+    
+    dt_series = df[date_key].value_counts()
+    dt_series = dt_series.append(df0)
+    dt_series = dt_series[~dt_series.index.duplicated()]
+    dt_series.sort_index(inplace=True)
+    dt_series = dt_series.asfreq('D')
+    dt_series = dt_series.fillna(0) 
+    dates = dt_series.axes[0]
+    days = dates.day
+    months = dates.month
+    dates = ['{d}/{m}'.format(d=d, m=m) for d,m in zip(days, months)]
+
+    values = df['recovered'].cumsum()
+    values2 = df['deceased'].cumsum()
+
+    line_marker = dict(width=2)
+
+    traceRecovered =  go.Scatter(
+        x= dates,
+        y= values,
+        name= 'Recovered',
+        marker_color= 'green',
+        mode = 'lines',
+        line=line_marker
+    )
+     
+    traceDeaths =  go.Scatter(
+        x= dates,
+        y= values2,
+        name= 'Deceased',
+        marker_color= 'red',
+        mode = 'lines',
+        line=line_marker
+    )
+
+    traces.append(traceRecovered)
+    traces.append(traceDeaths)
     return {'data': traces, 'layout': layout}
 
 # =================================================================
